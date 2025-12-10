@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Trámites - Sitio de Prueba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Guía de Trámites</h1>
+        <p class="subtitle">Sitio de Prueba - Verificación de Datos</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="Buscar trámite...">
+            <button id="searchButton">Buscar</button>
+        </section>
+
+        <section class="filters-section">
+            <label for="categoryFilter">Categoría:</label>
+            <select id="categoryFilter">
+                <option value="">Todas</option>
+            </select>
+        </section>
+
+        <section class="results-section">
+            <h2>Trámites Disponibles</h2>
+            <div id="tramitesList" class="tramites-container">
+                <p class="loading">Cargando datos...</p>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h3>Estadísticas</h3>
+            <div id="statsContainer">
+                <p>Total de trámites: <span id="totalTramites">0</span></p>
+                <p>Categorías: <span id="totalCategorias">0</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guía de Trámites - Sitio de Prueba para Verificación de Datos</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
