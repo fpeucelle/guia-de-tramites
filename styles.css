@@ -1,0 +1,243 @@
+/* styles.css - Estilos para el sitio de prueba */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+#searchButton {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #5568d3;
+}
+
+.filters-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.filters-section label {
+    font-weight: 600;
+}
+
+#categoryFilter {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    min-width: 200px;
+}
+
+.results-section h2 {
+    margin-bottom: 1.5rem;
+    color: #667eea;
+}
+
+.tramites-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.tramite-card {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tramite-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.tramite-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.categoria-badge {
+    display: inline-block;
+    background-color: #667eea;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.descripcion {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.tramite-details {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.tramite-details p {
+    margin-bottom: 0.5rem;
+}
+
+.tramite-details strong {
+    color: #667eea;
+}
+
+.tramite-details ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.tramite-details li {
+    margin-bottom: 0.25rem;
+    color: #555;
+}
+
+.stats-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.stats-section h3 {
+    margin-bottom: 1rem;
+}
+
+#statsContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+#statsContainer p {
+    font-size: 1.1rem;
+}
+
+#statsContainer span {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.no-results {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+}
+
+.error {
+    text-align: center;
+    color: #d32f2f;
+    padding: 2rem;
+    background-color: #ffebee;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .tramites-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-section {
+        flex-direction: column;
+    }
+    
+    #searchInput,
+    #searchButton {
+        width: 100%;
+    }
+    
+    #statsContainer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,149 @@
+{
+  "tramites": [
+    {
+      "id": 1,
+      "nombre": "Obtención de DNI",
+      "categoria": "Documentación Personal",
+      "descripcion": "Trámite para obtener el Documento Nacional de Identidad",
+      "requisitos": [
+        "Acta de nacimiento",
+        "Comprobante de domicilio",
+        "Fotografías tamaño carnet"
+      ],
+      "costo": "$500",
+      "duracion": "15 días hábiles",
+      "lugar": "Registro Civil"
+    },
+    {
+      "id": 2,
+      "nombre": "Licencia de Conducir",
+      "categoria": "Transporte",
+      "descripcion": "Obtención de licencia para conducir vehículos",
+      "requisitos": [
+        "DNI vigente",
+        "Certificado médico",
+        "Examen teórico aprobado",
+        "Examen práctico aprobado"
+      ],
+      "costo": "$1,200",
+      "duracion": "30 días hábiles",
+      "lugar": "Dirección de Tránsito"
+    },
+    {
+      "id": 3,
+      "nombre": "Pasaporte",
+      "categoria": "Documentación Personal",
+      "descripcion": "Emisión de pasaporte para viajes internacionales",
+      "requisitos": [
+        "DNI vigente",
+        "Partida de nacimiento",
+        "Fotografías actualizadas",
+        "Comprobante de pago"
+      ],
+      "costo": "$2,000",
+      "duracion": "20 días hábiles",
+      "lugar": "Registro Nacional de las Personas"
+    },
+    {
+      "id": 4,
+      "nombre": "Permiso de Obra",
+      "categoria": "Construcción",
+      "descripcion": "Autorización para realizar obras en propiedad privada",
+      "requisitos": [
+        "Título de propiedad",
+        "Planos firmados por arquitecto",
+        "Certificado de uso de suelo",
+        "Comprobante de pago de tasas"
+      ],
+      "costo": "Variable según proyecto",
+      "duracion": "45 días hábiles",
+      "lugar": "Dirección de Obras Particulares"
+    },
+    {
+      "id": 5,
+      "nombre": "Certificado de Antecedentes Penales",
+      "categoria": "Documentación Personal",
+      "descripcion": "Certificado que acredita ausencia de antecedentes penales",
+      "requisitos": [
+        "DNI vigente",
+        "Comprobante de pago"
+      ],
+      "costo": "$300",
+      "duracion": "5 días hábiles",
+      "lugar": "Registro Nacional de Reincidencia"
+    },
+    {
+      "id": 6,
+      "nombre": "Inscripción en Monotributo",
+      "categoria": "Impuestos",
+      "descripcion": "Registro como contribuyente del régimen simplificado",
+      "requisitos": [
+        "CUIL",
+        "DNI vigente",
+        "Comprobante de domicilio",
+        "Alta de actividad"
+      ],
+      "costo": "Sin costo inicial",
+      "duracion": "Inmediato (online)",
+      "lugar": "AFIP - Administración Federal de Ingresos Públicos"
+    },
+    {
+      "id": 7,
+      "nombre": "Registro de Marca",
+      "categoria": "Empresarial",
+      "descripcion": "Registro de marca comercial",
+      "requisitos": [
+        "Formulario de solicitud",
+        "Descripción de la marca",
+        "Comprobante de pago de tasas",
+        "Constancia de CUIT/CUIL"
+      ],
+      "costo": "$5,000",
+      "duracion": "180 días hábiles",
+      "lugar": "Instituto Nacional de la Propiedad Industrial (INPI)"
+    },
+    {
+      "id": 8,
+      "nombre": "Habilitación Comercial",
+      "categoria": "Empresarial",
+      "descripcion": "Permiso para ejercer actividades comerciales",
+      "requisitos": [
+        "Plano del local",
+        "Certificado de habilitación eléctrica",
+        "Certificado de habilitación de bomberos",
+        "Contrato de alquiler o título de propiedad"
+      ],
+      "costo": "$3,500",
+      "duracion": "60 días hábiles",
+      "lugar": "Municipalidad"
+    },
+    {
+      "id": 9,
+      "nombre": "Certificado de Libre Deuda",
+      "categoria": "Impuestos",
+      "descripcion": "Certificado que acredita no tener deudas fiscales",
+      "requisitos": [
+        "CUIT/CUIL",
+        "DNI vigente"
+      ],
+      "costo": "Sin costo",
+      "duracion": "Inmediato (online)",
+      "lugar": "AFIP"
+    },
+    {
+      "id": 10,
+      "nombre": "Permiso de Importación",
+      "categoria": "Comercio Exterior",
+      "descripcion": "Autorización para importar mercaderías",
+      "requisitos": [
+        "Registro de importador",
+        "Factura comercial",
+        "Certificado de origen",
+        "Documentación de aduana"
+      ],
+      "costo": "Variable según mercadería",
+      "duracion": "30 días hábiles",
+      "lugar": "Aduana"
+    }
+  ]
+}
