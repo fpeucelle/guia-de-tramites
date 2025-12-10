@@ -1,0 +1,495 @@
+{
+  "tramites": [
+    {
+      "id": 1,
+      "titulo": "Certificación de firma ológrafa del Registro Civil",
+      "organismo": "Cámara de Apelaciones Civil - Comodoro Rivadavia",
+      "circunscripcion": "Comodoro Rivadavia",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Certificación de firmas ológrafas contenidas en documentación emitida por el Registro Civil",
+      "pdfUrl": "https://www.juschubut.gov.ar/images/ACUERDO-Nro-15_2021.pdf",
+      "secciones": [
+        {
+          "titulo": "¿Qué regiones alcanza el trámite?",
+          "contenido": "Este trámite aplica para la Circunscripción Judicial de Comodoro Rivadavia, que comprende las localidades de Comodoro Rivadavia, Rada Tilly, Caleta Olivia y zona de influencia."
+        },
+        {
+          "titulo": "¿Qué necesito?",
+          "contenido": "- Documento original emitido por el Registro Civil con firma a certificar\n- DNI del solicitante (original y copia)\n- Pago de tasa judicial correspondiente\n- Formulario de solicitud completado"
+        },
+        {
+          "titulo": "Modalidad",
+          "contenido": "**Presencial:** La certificación se realiza de manera presencial en la Cámara de Apelaciones Civil de Comodoro Rivadavia, en horario de atención al público de lunes a viernes de 7:00 a 13:00 hs."
+        },
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "- Dirigirse a Mesa de Entradas de la Cámara con la documentación requerida\n- Presentar el documento original y la copia del DNI\n- Completar el formulario de solicitud en el lugar\n- Abonar la tasa judicial en el Banco del Chubut\n- Presentar el comprobante de pago y aguardar la certificación"
+        },
+        {
+          "titulo": "Tiempo",
+          "contenido": "El trámite se realiza en el acto si la documentación está completa. Tiempo estimado: **30 minutos**."
+        },
+        {
+          "titulo": "Costo",
+          "contenido": "Tasa judicial vigente según normativa provincial. Consultar monto actualizado en Mesa de Entradas."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Asignación de Causas de Cámara",
+      "organismo": "Cámara de Apelaciones Civil - Comodoro Rivadavia",
+      "circunscripcion": "Comodoro Rivadavia",
+      "tipo": "pauta",
+      "tipoLabel": "Pauta",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Documento oficial que establece el procedimiento y criterios para la asignación de causas judiciales a los distintos miembros de la Cámara de Apelaciones Civil. Acuerdo N° 15/2021.",
+      "pdfUrl": "https://www.juschubut.gov.ar/images/ACUERDO-Nro-15_2021.pdf"
+    },
+    {
+      "id": 3,
+      "titulo": "Guía de referencia para presentaciones judiciales",
+      "organismo": "Juzgado Laboral N° 1 - Puerto Madryn",
+      "circunscripcion": "Puerto Madryn",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Requisitos y procedimientos para presentaciones en el Juzgado Laboral N° 1",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "Presentación de escritos",
+          "contenido": "- Todos los escritos judiciales deben ser subidos a Serconex en archivo de texto PDF, no en archivo de imagen\n- Cualquier tipo de documentación que se suba al sistema debe estar acompañada del escrito digital que indique expresamente la pretensión jurisdiccional\n- Se recomienda comprobar que toda la documental sea legible"
+        },
+        {
+          "titulo": "Requisitos para orden de transferencias",
+          "contenido": "- El pedido debe subirse a Serconex en archivo PDF de texto, no de imagen\n- Debe contener: concepto (capital, intereses, devolución, honorarios)\n- Datos de la cuenta judicial (número de cuenta y CBU)\n- Datos de cuenta destino (titular, CUIT/CUIL, número de cuenta, CBU, Banco y sucursal)\n- Para honorarios/pacto de cuota litis, solo transferencias a cuentas del Banco del Chubut SA"
+        },
+        {
+          "titulo": "Audiencias",
+          "contenido": "- Las audiencias serán remotas por sistema Webex como principio general\n- Solo deben concurrir presencialmente los testigos citados o absolvente\n- Los links se envían al mail denunciado en el Colegio Público de Abogados (SAM)"
+        },
+        {
+          "titulo": "Cartas poder",
+          "contenido": "Se toman de 07:00 a 09:00 hs. Deben presentarse dos copias perfectamente legibles, en doble faz, con espacio suficiente para firmas y sellos. No se efectúan enmiendas en el nombre y DNI del poderdante."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Certificación de firma ológrafa",
+      "organismo": "Cámara de Apelaciones Civil - Trelew",
+      "circunscripcion": "Trelew",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Certificación de firmas ológrafas contenidas en documentación emitida por el Registro Civil y dependencias de la Judicatura. Servicio disponible en horario de atención al público.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 5,
+      "titulo": "Pautas de tramitación en lo Contencioso Administrativo",
+      "organismo": "Juzgado en lo Contencioso Administrativo - Esquel",
+      "circunscripcion": "Esquel",
+      "tipo": "pauta",
+      "tipoLabel": "Pauta",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Lineamientos procedimentales para causas en el fuero Contencioso Administrativo",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "Consideraciones generales",
+          "contenido": "Las pautas de tramitación establecen los lineamientos procedimentales específicos para la presentación y tramitación de causas en el fuero Contencioso Administrativo."
+        },
+        {
+          "titulo": "Ámbito de aplicación",
+          "contenido": "Circunscripción Judicial de Esquel y zona de influencia. Comprende controversias entre particulares y el Estado Provincial, Municipal o entes autárquicos."
+        },
+        {
+          "titulo": "Documentación requerida",
+          "contenido": "- Escrito de demanda con fundamentación legal\n- Prueba documental pertinente\n- Acreditación de personería si corresponde\n- Comprobante de tasa judicial"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Guía para oficios a confronte",
+      "organismo": "Juzgado Laboral N° 1 - Puerto Madryn",
+      "circunscripcion": "Puerto Madryn",
+      "tipo": "modelo",
+      "tipoLabel": "Modelo",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Los oficios se deben subir por Serconex como cualquier otro escrito judicial, directamente sin requerir otro escrito. En caso que corresponda su libramiento, se firmará en soporte papel y se dejará en mesa de entradas.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 7,
+      "titulo": "Cesión de honorarios - Pautas",
+      "organismo": "Juzgado Laboral N° 1 - Puerto Madryn",
+      "circunscripcion": "Puerto Madryn",
+      "tipo": "pauta",
+      "tipoLabel": "Pauta",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Para que proceda la cesión de honorarios se requiere conformidad expresa del cesionario mediante escrito por Serconex con firma ológrafa. En caso de requerirse ratificación ante Actuario se indicará por providencia.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 8,
+      "titulo": "Presentación de Certificados de Trabajo",
+      "organismo": "Juzgado Laboral N° 2 - Puerto Madryn",
+      "circunscripcion": "Puerto Madryn",
+      "tipo": "modelo",
+      "tipoLabel": "Modelo",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Los certificados de trabajo deberán presentarse en original en soporte papel por mesa de entradas, debiendo paralelamente o previamente subir a Serconex el escrito que indica su presentación.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 9,
+      "titulo": "Reclamo psicológico en Accidentes de Trabajo",
+      "organismo": "Juzgado Laboral N° 3 - Puerto Madryn",
+      "circunscripcion": "Puerto Madryn",
+      "tipo": "pauta",
+      "tipoLabel": "Pauta",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Requisitos para reclamos de incapacidad psicológica derivada de accidentes laborales",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "Requisito previo",
+          "contenido": "En caso de reclamarse este rubro, previo a ordenar el traslado de la demanda se le requerirá a la parte actora que acredite mediante presentación del correspondiente certificado, respecto de la incapacidad psicológica o psiquiátrica que refiera padecer."
+        },
+        {
+          "titulo": "Documentación necesaria",
+          "contenido": "- Certificado médico de profesional especializado (psicólogo o psiquiatra)\n- Debe especificar el diagnóstico y grado de incapacidad\n- Relación de causalidad con el accidente de trabajo\n- Estudios complementarios si corresponde"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Presentación de documentación física",
+      "organismo": "Juzgado de Ejecución N° 1 - Comodoro Rivadavia",
+      "circunscripcion": "Comodoro Rivadavia",
+      "tipo": "pauta",
+      "tipoLabel": "Pauta",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "La documentación física se presenta por mesa de entradas debiendo paralelamente o previamente subir a Serconex el escrito que indica su presentación. Horario de atención: lunes a viernes de 7:00 a 13:00 hs.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 11,
+      "titulo": "Cédulas de notificación",
+      "organismo": "Juzgado de Ejecución N° 3 - Comodoro Rivadavia",
+      "circunscripcion": "Comodoro Rivadavia",
+      "tipo": "modelo",
+      "tipoLabel": "Modelo",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Las cédulas de notificación se presentan directamente por mesa de entradas para su control. Deben cumplir con los requisitos formales establecidos por el Código Procesal.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 12,
+      "titulo": "Pautas para audiencias judiciales",
+      "organismo": "Juzgado de Familia - Esquel",
+      "circunscripcion": "Esquel",
+      "tipo": "pauta",
+      "tipoLabel": "Pauta",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Lineamientos para la participación en audiencias judiciales, tanto presenciales como remotas. Incluye requisitos de conexión, conducta procesal y documentación necesaria.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 13,
+      "titulo": "Guía de trámites del fuero de familia",
+      "organismo": "Oficina de Gestión Unificada del Fuero de Familia - Comodoro Rivadavia",
+      "circunscripcion": "Comodoro Rivadavia",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Orientación sobre los trámites más frecuentes en el fuero de familia: divorcios, alimentos, régimen de comunicación, medidas de protección y otros procedimientos familiares.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 14,
+      "titulo": "Procedimientos en causas de familia",
+      "organismo": "Oficina de Gestión Unificada del Fuero de Familia - Trelew",
+      "circunscripcion": "Trelew",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Instructivo sobre los pasos a seguir para iniciar y tramitar causas en el fuero de familia. Incluye modelos de escritos y requisitos específicos de la circunscripción.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 15,
+      "titulo": "Pautas de tramitación civil y comercial",
+      "organismo": "Juzgado Civil y Comercial N° 1 - Trelew",
+      "circunscripcion": "Trelew",
+      "tipo": "pauta",
+      "tipoLabel": "Pauta",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Lineamientos procedimentales para la tramitación de causas civiles y comerciales. Incluye plazos, formas de notificación, presentación de pruebas y demás aspectos procesales.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 16,
+      "titulo": "Autorización de viaje de menores al exterior",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Autorización judicial para que menores de edad puedan viajar al exterior. Requiere posterior apostillado en Cámara de Apelaciones y Colegio de Escribanos.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "Modalidad",
+          "contenido": "Presencial."
+        },
+        {
+          "titulo": "¿Qué necesito?",
+          "contenido": "- DNI del progenitor o progenitores autorizantes, con domicilio en esta ciudad\n- Partida de nacimiento del niño, niña o adolescente a autorizar, donde figuren los datos de sus progenitores\n- DNI del niño, niña o adolescente a autorizar\n- DNI acompañante si correspondiere"
+        },
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito? Se atiende por orden de llegada, sin turno previo.\n2. Retirar el certificado emitido en la Mesa de Entrada de Juzgado de Paz.\n3. Posteriormente deberá pasar por la Cámara de Apelaciones de Comodoro Rivadavia a fin de que se le coloque el sello de agua al documento.\n4. Finalmente deberá acudir al Colegio de Escribanos, a los efectos de tramitar el Apostillado de la Haya, si correspondiere."
+        },
+        {
+          "titulo": "¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz, se lleva la autorización para continuar con el trámite.\nDeberá consultar ante los otros organismos el resto de la tramitación."
+        },
+        {
+          "titulo": "¿Cuál es el costo del trámite?",
+          "contenido": "El trámite ante el Juzgado de Paz tiene un valor de 1 JUS.\nDemás costos deberán ser consultados ante los otros organismos.\n\nPuede consultar el valor vigente del JUS ingresando a: https://servicios.dgrchubut.gov.ar/modulos/tasas.php"
+        },
+        {
+          "titulo": "Información Importante",
+          "contenido": "También puede realizar el trámite de Autorización de Viaje al Exterior en las Oficinas de Migración.\nHay oficinas en: Bariloche, Comodoro Rivadavia, Puerto Madryn y Rawson.\n\nPara más información:\n- Sobre el trámite: https://www.argentina.gob.ar/servicio/autorizacion-de-viaje-para-menores-de-edad\n- Direcciones y horarios: https://www.argentina.gob.ar/interior/migraciones/delegaciones-y-oficinas-migratorias-autorizacion-de-salida-del-pais-de-ninos"
+        },
+        {
+          "titulo": "Contacto",
+          "contenido": "WhatsApp: 297 425-9231\nTodos los trámites se pueden iniciar por este medio."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "titulo": "Autorización de viaje de menores dentro de Argentina",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Autorización judicial para que menores de edad puedan viajar dentro del territorio argentino. Se emite el mismo día.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 18,
+      "titulo": "Declaraciones Juradas",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "modelo",
+      "tipoLabel": "Modelo",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Trámite de declaración jurada ante el Juzgado de Paz. Requiere presencia de dos testigos. Servicio gratuito.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original (sin turno previo, por orden de llegada)\n2. A las 24 hs., retirar la Declaración Jurada emitida en la Mesa de Entrada"
+        },
+        {
+          "titulo": "Tiempo",
+          "contenido": "24 horas desde la presentación con los dos testigos."
+        },
+        {
+          "titulo": "Costo",
+          "contenido": "Gratuito"
+        },
+        {
+          "titulo": "Importante",
+          "contenido": "Los convivientes menores de 18 años deben consultar en Asesoría de Familia (Ingeniero Coronel nº 345 - Sarmiento - Tel: 0297 489-3400)"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "titulo": "Carta Poder",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "modelo",
+      "tipoLabel": "Modelo",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Confección de carta poder ante el Juzgado de Paz. Se entrega el mismo día. Servicio gratuito.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "¿Qué necesito?",
+          "contenido": "- Poder confeccionado por el Letrado, con duplicado"
+        },
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original (sin turno previo, por orden de llegada)\n2. Retirar la Carta Poder en la Mesa de Entrada"
+        },
+        {
+          "titulo": "Tiempo",
+          "contenido": "Se entrega el mismo día."
+        },
+        {
+          "titulo": "Costo",
+          "contenido": "Gratuito"
+        },
+        {
+          "titulo": "Importante",
+          "contenido": "Los Poderes para presentar en los Juzgados de la jurisdicción de Sarmiento deben tramitarse ante el Juzgado correspondiente."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "titulo": "Certificado de Supervivencia",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "modelo",
+      "tipoLabel": "Modelo",
+      "componenteTipo": "tarjeta",
+      "descripcionCorta": "Certificación de supervivencia para trámites previsionales o bancarios. Se entrega el mismo día. Servicio gratuito.",
+      "pdfUrl": ""
+    },
+    {
+      "id": 21,
+      "titulo": "Marcas y Señales: Guías de traslado de Hacienda/Lana",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Emisión de guías para traslado de hacienda y lana. Se entrega el mismo día con pago previo en ARECH.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "¿Qué necesito?",
+          "contenido": "- Certificado de Adquisición/Libreta Sanitaria (si corresponde)\n- Datos de Transporte: Marca, Dominio / Acoplado o carro, Dominio\n- Datos del Transportista: Nombre y Apellido, DNI"
+        },
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original (sin turno previo, por orden de llegada)\n2. Retirar la Guía emitida en la Mesa de Entrada"
+        },
+        {
+          "titulo": "Tiempo",
+          "contenido": "Se entrega el mismo día."
+        },
+        {
+          "titulo": "Costo",
+          "contenido": "La Guía tiene un costo que debe ser abonado en ARECH (Agencia de Recaudación de la Pcia. Del Chubut).\nConsultar valor vigente en: https://servicios.dgrchubut.gov.ar/modulos/tasas.php"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "titulo": "Registro Civil - Nacimientos",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Inscripción de nacimientos en el Registro Civil. Gratuito dentro de los 6 meses. Se entrega el mismo día.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original (sin turno previo, por orden de llegada)\n2. Retirar el Acta emitida en la Mesa de Entrada"
+        },
+        {
+          "titulo": "Tiempo",
+          "contenido": "Se entrega el mismo día."
+        },
+        {
+          "titulo": "Costo",
+          "contenido": "Gratuito dentro del término de 6 meses. Luego tiene un costo que debe ser abonado en Rentas.\nConsultar valor vigente en: https://servicios.dgrchubut.gov.ar/modulos/tasas.php"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "titulo": "Registro Civil - Uniones Convivenciales",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Inscripción y cese de uniones convivenciales. Se entrega el mismo día. Tiene costo según tasa vigente.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original (sin turno previo, por orden de llegada)\n2. Retirar el Acta emitida en la Mesa de Entrada"
+        },
+        {
+          "titulo": "Tiempo",
+          "contenido": "Se entrega el mismo día."
+        },
+        {
+          "titulo": "Costo",
+          "contenido": "Tiene un costo que debe ser abonado en Rentas.\nConsultar valor vigente en: https://servicios.dgrchubut.gov.ar/modulos/tasas.php"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "titulo": "Registro Civil - Matrimonios",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Inscripción de matrimonios civiles. Se entrega el mismo día. Tiene costo según tasa vigente.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original (sin turno previo, por orden de llegada)\n2. Retirar el Acta emitida en la Mesa de Entrada"
+        },
+        {
+          "titulo": "Tiempo",
+          "contenido": "Se entrega el mismo día."
+        },
+        {
+          "titulo": "Costo",
+          "contenido": "Tiene un costo que debe ser abonado en Rentas.\nConsultar valor vigente en: https://servicios.dgrchubut.gov.ar/modulos/tasas.php"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "titulo": "Registro Civil - Defunciones",
+      "organismo": "Juzgado de Paz - Sarmiento",
+      "circunscripcion": "Sarmiento",
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Inscripción de defunciones. Las primeras 4 actas son gratuitas. Se entrega el mismo día.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original (sin turno previo, por orden de llegada)\n2. Retirar el Acta emitida en la Mesa de Entrada"
+        },
+        {
+          "titulo": "Tiempo",
+          "contenido": "Se entrega el mismo día."
+        },
+        {
+          "titulo": "Costo",
+          "contenido": "- Las primeras cuatro (4) actas se entregan juntas y sin costo\n- Luego, si se necesitan más actas, tiene un costo que se abona en Rentas\nConsultar valor vigente en: https://servicios.dgrchubut.gov.ar/modulos/tasas.php"
+        }
+      ]
+    }
+  ]
+}
