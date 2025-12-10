@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Trámites - Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS del portal -->
+    <link rel="stylesheet" href="portal-tramites-styles.css">
+
+    <!-- jQuery (necesario para el script del portal) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-3gJwYp4gkG2R8D0rnbV0w8AV2Xp1Zl8R2KqCq0PpKAI="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ============================================
+     PORTAL DE TRÁMITES - CONTENIDO
+     Adaptado para página estática (GitHub Pages)
+============================================ -->
+
+<div class="portal-tramites">
+    <!-- Sección de Búsqueda -->
+    <div class="search-section">
+        <div class="search-header">
+            <h2>Portal de Trámites</h2>
+            <p>Buscá por título y filtrá por organismo</p>
+        </div>
+
+        <div class="search-controls">
+            <div class="search-input-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInputTramites" class="search-input"
+                       placeholder="Buscar por título del trámite...">
+            </div>
+
+            <div class="search-input-wrapper">
+                <span class="search-icon">🏛️</span>
+                <select id="organismoFilterTramites" class="filter-select">
+                    <option value="">Todos los organismos</option>
+                    <!-- Opciones se llenarán dinámicamente desde el JSON -->
+                </select>
+            </div>
+        </div>
+
+        <div class="search-stats" id="searchStatsTramites">
+            Mostrando <strong id="resultCountTramites">0</strong> trámites
+        </div>
+    </div>
+
+    <div class="search-subtitle" id="selectedOrganismoSubtitle" style="
+        text-align:center;
+        font-size:1.15rem;
+        font-weight:600;
+        color:#1f385e;
+        margin-top:0.5rem;
+        display:none;
+    "></div>
+
+    <!-- Grid de Trámites (se llena dinámicamente) -->
+    <div class="tramites-grid" id="tramitesGridJoomla"></div>
+
+    <!-- Mensaje cuando no hay resultados -->
+    <div class="no-results" id="noResultsTramites" style="display: none;">
+        <div class="no-results-icon">🔍</div>
+        <h3>No se encontraron resultados</h3>
+        <p>Intenta con otros términos de búsqueda o selecciona otro organismo</p>
+    </div>
+</div>
+
+<!-- ============================================
+     SCRIPT DEL PORTAL
+============================================ -->
+<script>
+    (function ($) {
+        'use strict';
+
+        // Variable global para mantener el estado del select
+        let currentOrganismoSelected = '';
+
+        $(document).ready(function () {
+
+            // ========================================
+            // CONFIGURACIÓN
+            // ========================================
+            // Para GitHub Pages asumimos que tramites-data.json
+            // está en la misma carpeta que index.html
+            const JSON_DATA_URL = 'tramites-data.json';
+
+            let tramitesData = [];
+            let $searchInput = $('#searchInputTramites');
+            let $organismoFilter = $('#organismoFilterTramites');
+            let $tramitesGrid = $('#tramitesGridJoomla');
+            let $resultCount = $('#resultCountTramites');
+            let $noResults = $('#noResultsTramites');
+            let $selectedOrganismoSubtitle = $('#selectedOrganismoSubtitle');
+
+            // ========================================
+            // Cargar datos JSON
+            // ========================================
+            $.getJSON(JSON_DATA_URL, function (data) {
+                tramitesData = data.tramites;
+                inicializarPortal();
+            }).fail(function (jqxhr, textStatus, error) {
+                console.error('Error al cargar tramites-data.json:', textStatus, error);
+                const mensajeError = `
+                    <div style="text-align:center; padding:2rem; background:#fff; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                        <p style="color:#d32f2f; font-size:1.2rem; margin-bottom:1rem;">⚠️ Error al cargar los datos</p>
+                        <p style="color:#666;">Verifique que el archivo <code>tramites-data.json</code> esté en la misma carpeta que <code>index.html</code>.</p>
+                        <p style="color:#666; margin-top:0.5rem;">Ruta actual usada: <code>${JSON_DATA_URL}</code></p>
+                    </div>
+                `;
+                $tramitesGrid.html(mensajeError);
+            });
+
+            // ========================================
+            // Inicializar portal
+            // ========================================
+            function inicializarPortal() {
+                // Poblar select de organismos (sin duplicados, ordenado alfabéticamente)
+                const organismos = [...new Set(tramitesData.map(t => t.organismo))].sort();
+                organismos.forEach(org => {
+                    $organismoFilter.append(`<option value="${org}">${org}</option>`);
+                });
+
+                // Renderizar todos los trámites inicialmente
+                renderizarTramites(tramitesData);
+
+                // Búsqueda con debounce
+                let searchTimeout;
+                $searchInput.on('input', function () {
+                    clearTimeout(searchTimeout);
+                    searchTimeout = setTimeout(filtrarTramites, 300);
+                });
+
+                // Filtro de organismo con captura de valor
+                $organismoFilter.on('change', function () {
+                    currentOrganismoSelected = $(this).val();
+                    actualizarTituloOrganismo();
+                    filtrarTramites();
+                    restaurarSelectOrganismo();
+                });
+            }
+
+            // ========================================
+            // Función para restaurar el select
+            // ========================================
+            function restaurarSelectOrganismo() {
+                if (currentOrganismoSelected) {
+                    $organismoFilter.val(currentOrganismoSelected);
+
+                    setTimeout(function () {
+                        $organismoFilter.val(currentOrganismoSelected);
+                        $organismoFilter.find('option').prop('selected', false);
+                        $organismoFilter.find(`option[value="${currentOrganismoSelected}"]`).prop('selected', true);
+                    }, 10);
+
+                    setTimeout(function () {
+                        $organismoFilter.val(currentOrganismoSelected);
+                    }, 50);
+
+                    setTimeout(function () {
+                        $organismoFilter.val(currentOrganismoSelected);
+                    }, 100);
+                }
+            }
+
+            // ========================================
+            // Renderizar trámites
+            // ========================================
+            function renderizarTramites(tramites) {
+                $tramitesGrid.empty();
+
+                if (tramites.length === 0) {
+                    $noResults.show();
+                    return;
+                }
+
+                $noResults.hide();
+
+                tramites.forEach(tramite => {
+                    let html = '';
+
+                    if (tramite.componenteTipo === 'acordeon') {
+                        html = generarAcordeon(tramite);
+                    } else {
+                        html = generarTarjeta(tramite);
+                    }
+
+                    $tramitesGrid.append(html);
+                });
+
+                actualizarContador(tramites.length);
+                restaurarSelectOrganismo();
+            }
+
+            // ========================================
+            // Generar tarjeta simple
+            // ========================================
+            function generarTarjeta(tramite) {
+                const iconos = {
+                    'guia': '📋',
+                    'pauta': '📜',
+                    'modelo': '📝'
+                };
+
+                const badgeClass = `badge-${tramite.tipo}`;
+                const icono = iconos[tramite.tipo] || '📄';
+
+                const botonPDF = tramite.pdfUrl ?
+                    `<a href="${tramite.pdfUrl}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">📄 Descargar PDF</a>` :
+                    '';
+
+                return `
+                    <div class="tramite-card tramite-item"
+                        data-organismo="${tramite.organismo}"
+                        data-tipo="${tramite.tipo}"
+                        data-titulo="${tramite.titulo.toLowerCase()}">
+                        <div class="tramite-card-header">
+                            <span class="tramite-icon">${icono}</span>
+                            <div class="tramite-card-title">
+                                <h3>${tramite.titulo}</h3>
+                                <div class="organismo">${tramite.organismo}</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="badge ${badgeClass}">${tramite.tipoLabel}</span>
+                            <span class="badge badge-circunscripcion">${tramite.circunscripcion}</span>
+                        </div>
+
+                        <p class="tramite-description">${tramite.descripcionCorta}</p>
+
+                        ${botonPDF ? `<div class="tramite-footer">${botonPDF}</div>` : ''}
+                    </div>
+                `;
+            }
+
+            // ========================================
+            // Generar acordeón
+            // ========================================
+            function generarAcordeon(tramite) {
+                const badgeClass = `badge-${tramite.tipo}`;
+
+                let seccionesHTML = '';
+                if (tramite.secciones && tramite.secciones.length > 0) {
+                    seccionesHTML = tramite.secciones.map(seccion => `
+                        <div class="accordion-section">
+                            <h4>${seccion.titulo}</h4>
+                            <p>${seccion.contenido}</p>
+                        </div>
+                    `).join('');
+                }
+
+                const botonPDF = tramite.pdfUrl ?
+                    `<div class="tramite-footer">
+                        <a href="${tramite.pdfUrl}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">📄 Descargar PDF</a>
+                    </div>` :
+                    '';
+
+                return `
+                    <details class="tramite-accordion tramite-item"
+                        data-organismo="${tramite.organismo}"
+                        data-tipo="${tramite.tipo}"
+                        data-titulo="${tramite.titulo.toLowerCase()}">
+                        <summary class="accordion-summary">
+                            <div class="accordion-title-wrapper">
+                                <h3>${tramite.titulo}</h3>
+                                <div class="organismo">${tramite.organismo}</div>
+                                <div style="margin-top: 0.5rem;">
+                                    <span class="badge ${badgeClass}">${tramite.tipoLabel}</span>
+                                    <span class="badge badge-circunscripcion">${tramite.circunscripcion}</span>
+                                </div>
+                            </div>
+                            <span class="accordion-expand-icon">▼</span>
+                        </summary>
+
+                        <div class="accordion-content">
+                            ${seccionesHTML}
+                            ${botonPDF}
+                        </div>
+                    </details>
+                `;
+            }
+
+            // ========================================
+            // Filtrar trámites
+            // ========================================
+            function filtrarTramites() {
+                const searchTerm = $searchInput.val().toLowerCase().trim();
+                const selectedOrganismo = currentOrganismoSelected;
+
+                const filtrados = tramitesData.filter(tramite => {
+                    const matchesSearch = searchTerm === '' ||
+                        tramite.titulo.toLowerCase().includes(searchTerm) ||
+                        tramite.descripcionCorta.toLowerCase().includes(searchTerm);
+
+                    const matchesOrganismo = selectedOrganismo === '' ||
+                        tramite.organismo === selectedOrganismo;
+
+                    return matchesSearch && matchesOrganismo;
+                });
+
+                if (filtrados.length === 0) {
+                    $noResults.fadeIn(300);
+                    $tramitesGrid.fadeOut(300);
+                } else {
+                    $noResults.fadeOut(300);
+                    $tramitesGrid.fadeIn(300);
+                    renderizarTramites(filtrados);
+                }
+
+                actualizarContador(filtrados.length);
+            }
+
+            // ========================================
+            // Actualizar contador de resultados
+            // ========================================
+            function actualizarContador(count) {
+                $resultCount.text(count);
+            }
+
+            function actualizarTituloOrganismo() {
+                const selectedOrganismo = currentOrganismoSelected;
+                const selectedOrganismoLabel = selectedOrganismo === '' ? 'Todos los organismos' : selectedOrganismo;
+                $selectedOrganismoSubtitle.text(selectedOrganismoLabel);
+                $selectedOrganismoSubtitle.fadeIn(300);
+            }
+
+            // ========================================
+            // Animación de acordeones
+            // ========================================
+            $(document).on('toggle', '.tramite-accordion', function () {
+                const $this = $(this);
+                if ($this.prop('open')) {
+                    $this.find('.accordion-content').hide().slideDown(400);
+                }
+            });
+
+            console.log('Portal de Trámites cargado correctamente ✅');
+        });
+
+    })(jQuery);
+</script>
+
+</body>
+</html>
