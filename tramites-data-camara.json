@@ -1,0 +1,85 @@
+{
+  "tramites": [
+    {
+      "id": 101,
+      "titulo": "Certificación de firma ológrafa del Registro Civil",
+      "organismos": [
+        "Cámara de Apelaciones Civil - Comodoro Rivadavia",
+        "Cámara de Apelaciones Civil - Puerto Madryn"
+      ],
+      "circunscripciones": ["Comodoro Rivadavia",
+         "Puerto Madryn"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Certificación de firmas ológrafas en partidas y demás documentación emitida por el Registro Civil de la Circunscripción Judicial Comodoro Rivadavia. Trámite presencial y gratuito.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "📍 ¿Qué regiones alcanza el trámite?",
+          "contenido": "El trámite alcanza documentación emitida por los registros civiles de la Circunscripción Judicial en que la Cámara tiene competencia.\n🗺️ Se puede consultar el detalle de las circunscripciones en el <a href=\"https://www.juschubut.gov.ar/index.php/organizacion/poder-judicial/mapa-judicial\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa Judicial del Poder Judicial del Chubut</a>."
+        },
+        {
+          "titulo": "📄 ¿Qué necesito?",
+          "contenido": "Copia certificada por el Registro Civil, en soporte papel, de la documentación cuya firma se desea certificar (por ejemplo partidas de nacimiento, matrimonio, divorcio o defunción)."
+        },
+        {
+          "titulo": "🏛️ Modalidad",
+          "contenido": "Presencial."
+        },
+        {
+          "titulo": "¿Cómo hago?",
+          "contenido": "1️⃣ Presentar la documentación a certificar en la Mesa de Entradas de la Cámara de Apelaciones.\n2️⃣ Puede concurrir la persona interesada o un representante.\n3️⃣ Retirar la documentación certificada en la Mesa de Entradas al día hábil siguiente de la presentación."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "La documentación queda disponible al siguiente día hábil de la presentación en la Cámara."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "El trámite es gratuito."
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "titulo": "Certificación de firma ológrafa del Registro Civil y dependencias de la Judicatura",
+      "organismos": [
+        "Cámara de Apelaciones Civil - Trelew"
+      ],
+      "circunscripciones": ["Trelew"],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Certificación de firmas ológrafas en documentación emitida por el Registro Civil y por dependencias de la Judicatura de la Circunscripción Judicial Trelew. Trámite presencial y gratuito, con plazos según el horario de presentación.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "📍 ¿Qué regiones alcanza el trámite?",
+          "contenido": "El trámite alcanza documentación emitida por los registros civiles y por dependencias de la Judicatura que integran la Circunscripción Judicial Trelew.\n🗺️ Se puede consultar el detalle de las circunscripciones en el Mapa Judicial del Poder Judicial del Chubut."
+        },
+        {
+          "titulo": "📄 ¿Qué necesito?",
+          "contenido": "Copia certificada por el Registro Civil o documentación emitida por dependencias de la Judicatura, en soporte papel, de la documentación cuya firma se desea certificar.\n🔏 La documentación debe contener fecha, sello y firma de la persona funcionaria que emitió la copia certificada."
+        },
+        {
+          "titulo": "🏛️ Modalidad",
+          "contenido": "Presencial."
+        },
+        {
+          "titulo": "📋 ¿Cómo hago?",
+          "contenido": "1️⃣ Presentar la documentación a certificar en la Mesa de Entradas de la Cámara de Apelaciones, dentro del horario de atención al público (lunes de 7 a 13 hs).\n2️⃣ Puede concurrir la persona interesada o un representante.\n3️⃣ Retirar la documentación certificada en la Mesa de Entradas según el plazo indicado en la sección de tiempo."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "Si la documentación se presenta antes de las 11 hs, se retira el mismo día a partir de las 12:30.\n📆 Si se presenta luego de las 11 hs, se retira al siguiente día hábil de la presentación en la Cámara."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "El trámite es gratuito."
+        }
+      ]
+    }
+  ]
+}

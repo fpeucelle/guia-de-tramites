@@ -42,6 +42,14 @@
                     <!-- Opciones se llenarán dinámicamente desde el JSON -->
                 </select>
             </div>
+
+            <div class="search-input-wrapper">
+                <span class="search-icon">🗺️</span>
+                <select id="circunscripcionFilterTramites" class="filter-select">
+                    <option value="">Todas las circunscripciones</option>
+                    <!-- Opciones se llenarán dinámicamente desde el JSON -->
+                </select>
+            </div>
         </div>
 
         <div class="search-stats" id="searchStatsTramites">
@@ -76,8 +84,9 @@
     (function ($) {
         'use strict';
 
-        // Variable global para mantener el estado del select
+        // Variables globales para mantener el estado de los filtros
         let currentOrganismoSelected = '';
+        let currentCircunscripcionSelected = '';
 
         $(document).ready(function () {
 
@@ -91,6 +100,7 @@
             let tramitesData = [];
             let $searchInput = $('#searchInputTramites');
             let $organismoFilter = $('#organismoFilterTramites');
+            let $circunscripcionFilter = $('#circunscripcionFilterTramites');
             let $tramitesGrid = $('#tramitesGridJoomla');
             let $resultCount = $('#resultCountTramites');
             let $noResults = $('#noResultsTramites');
@@ -102,6 +112,48 @@
             $.getJSON(JSON_DATA_URL, function (data) {
                 tramitesData = data.tramites;
                 inicializarPortal();
+                
+                // Leer parámetros de URL de forma robusta
+                try {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const organismoParam = urlParams.get('organismo');
+                    const circunscripcionParam = urlParams.get('circunscripcion');
+                    
+                    // Validar y aplicar filtro de organismo
+                    if (organismoParam && organismoParam.trim() !== '') {
+                        const organismos = [...new Set(tramitesData.flatMap(t => 
+                            Array.isArray(t.organismos) ? t.organismos : (t.organismo ? [t.organismo] : [])
+                        ))];
+                        
+                        if (organismos.includes(organismoParam)) {
+                            currentOrganismoSelected = organismoParam;
+                            $organismoFilter.val(organismoParam);
+                        } else {
+                            console.warn(`Organismo no encontrado: "${organismoParam}"`);
+                        }
+                    }
+                    
+                    // Validar y aplicar filtro de circunscripción
+                    if (circunscripcionParam && circunscripcionParam.trim() !== '') {
+                        const circunscripciones = [...new Set(tramitesData.flatMap(t => 
+                            Array.isArray(t.circunscripciones) ? t.circunscripciones : (t.circunscripcion ? [t.circunscripcion] : [])
+                        ))];
+                        
+                        if (circunscripciones.includes(circunscripcionParam)) {
+                            currentCircunscripcionSelected = circunscripcionParam;
+                            $circunscripcionFilter.val(circunscripcionParam);
+                        } else {
+                            console.warn(`Circunscripción no encontrada: "${circunscripcionParam}"`);
+                        }
+                    }
+                    
+                    // Aplicar filtros si hay alguno
+                    if (organismoParam || circunscripcionParam) {
+                        filtrarTramites();
+                    }
+                } catch (error) {
+                    console.error('Error al procesar parámetros de URL:', error);
+                }
             }).fail(function (jqxhr, textStatus, error) {
                 console.error('Error al cargar tramites-data.json:', textStatus, error);
                 const mensajeError = `
@@ -119,9 +171,20 @@
             // ========================================
             function inicializarPortal() {
                 // Poblar select de organismos (sin duplicados, ordenado alfabéticamente)
-                const organismos = [...new Set(tramitesData.map(t => t.organismo))].sort();
+                // Soporta tanto organismo (string) como organismos (array)
+                const organismos = [...new Set(tramitesData.flatMap(t => 
+                    Array.isArray(t.organismos) ? t.organismos : (t.organismo ? [t.organismo] : [])
+                ))].sort();
                 organismos.forEach(org => {
                     $organismoFilter.append(`<option value="${org}">${org}</option>`);
+                });
+
+                // Poblar select de circunscripciones (sin duplicados, ordenado alfabéticamente)
+                const circunscripciones = [...new Set(tramitesData.flatMap(t => 
+                    Array.isArray(t.circunscripciones) ? t.circunscripciones : (t.circunscripcion ? [t.circunscripcion] : [])
+                ))].sort();
+                circunscripciones.forEach(circ => {
+                    $circunscripcionFilter.append(`<option value="${circ}">${circ}</option>`);
                 });
 
                 // Renderizar todos los trámites inicialmente
@@ -140,6 +203,13 @@
                     actualizarTituloOrganismo();
                     filtrarTramites();
                     restaurarSelectOrganismo();
+                });
+
+                // Filtro de circunscripción con captura de valor
+                $circunscripcionFilter.on('change', function () {
+                    currentCircunscripcionSelected = $(this).val();
+                    filtrarTramites();
+                    restaurarSelectCircunscripcion();
                 });
             }
 
@@ -162,6 +232,29 @@
 
                     setTimeout(function () {
                         $organismoFilter.val(currentOrganismoSelected);
+                    }, 100);
+                }
+            }
+
+            // ========================================
+            // Función para restaurar el select de circunscripción
+            // ========================================
+            function restaurarSelectCircunscripcion() {
+                if (currentCircunscripcionSelected) {
+                    $circunscripcionFilter.val(currentCircunscripcionSelected);
+
+                    setTimeout(function () {
+                        $circunscripcionFilter.val(currentCircunscripcionSelected);
+                        $circunscripcionFilter.find('option').prop('selected', false);
+                        $circunscripcionFilter.find(`option[value="${currentCircunscripcionSelected}"]`).prop('selected', true);
+                    }, 10);
+
+                    setTimeout(function () {
+                        $circunscripcionFilter.val(currentCircunscripcionSelected);
+                    }, 50);
+
+                    setTimeout(function () {
+                        $circunscripcionFilter.val(currentCircunscripcionSelected);
                     }, 100);
                 }
             }
@@ -214,20 +307,21 @@
 
                 return `
                     <div class="tramite-card tramite-item"
-                        data-organismo="${tramite.organismo}"
+                        data-organismos='${JSON.stringify(Array.isArray(tramite.organismos) ? tramite.organismos : (tramite.organismo ? [tramite.organismo] : []))}'
+                        data-circunscripciones='${JSON.stringify(Array.isArray(tramite.circunscripciones) ? tramite.circunscripciones : (tramite.circunscripcion ? [tramite.circunscripcion] : []))}'
                         data-tipo="${tramite.tipo}"
                         data-titulo="${tramite.titulo.toLowerCase()}">
                         <div class="tramite-card-header">
                             <span class="tramite-icon">${icono}</span>
                             <div class="tramite-card-title">
                                 <h3>${tramite.titulo}</h3>
-                                <div class="organismo">${tramite.organismo}</div>
+                                <div class="organismo">${Array.isArray(tramite.organismos) ? tramite.organismos.join(', ') : tramite.organismo}</div>
                             </div>
                         </div>
 
                         <div>
                             <span class="badge ${badgeClass}">${tramite.tipoLabel}</span>
-                            <span class="badge badge-circunscripcion">${tramite.circunscripcion}</span>
+                            <span class="badge badge-circunscripcion">${Array.isArray(tramite.circunscripciones) ? tramite.circunscripciones.join(', ') : tramite.circunscripcion}</span>
                         </div>
 
                         <p class="tramite-description">${tramite.descripcionCorta}</p>
@@ -248,7 +342,7 @@
                     seccionesHTML = tramite.secciones.map(seccion => `
                         <div class="accordion-section">
                             <h4>${seccion.titulo}</h4>
-                            <p>${seccion.contenido}</p>
+                            <p>${seccion.contenido.replace(/\n/g, '<br>')}</p>
                         </div>
                     `).join('');
                 }
@@ -261,16 +355,17 @@
 
                 return `
                     <details class="tramite-accordion tramite-item"
-                        data-organismo="${tramite.organismo}"
+                        data-organismos='${JSON.stringify(Array.isArray(tramite.organismos) ? tramite.organismos : (tramite.organismo ? [tramite.organismo] : []))}'
+                        data-circunscripciones='${JSON.stringify(Array.isArray(tramite.circunscripciones) ? tramite.circunscripciones : (tramite.circunscripcion ? [tramite.circunscripcion] : []))}'
                         data-tipo="${tramite.tipo}"
                         data-titulo="${tramite.titulo.toLowerCase()}">
                         <summary class="accordion-summary">
                             <div class="accordion-title-wrapper">
                                 <h3>${tramite.titulo}</h3>
-                                <div class="organismo">${tramite.organismo}</div>
+                                <div class="organismo">${Array.isArray(tramite.organismos) ? tramite.organismos.join(', ') : tramite.organismo}</div>
                                 <div style="margin-top: 0.5rem;">
                                     <span class="badge ${badgeClass}">${tramite.tipoLabel}</span>
-                                    <span class="badge badge-circunscripcion">${tramite.circunscripcion}</span>
+                                    <span class="badge badge-circunscripcion">${Array.isArray(tramite.circunscripciones) ? tramite.circunscripciones.join(', ') : tramite.circunscripcion}</span>
                                 </div>
                             </div>
                             <span class="accordion-expand-icon">▼</span>
@@ -290,16 +385,36 @@
             function filtrarTramites() {
                 const searchTerm = $searchInput.val().toLowerCase().trim();
                 const selectedOrganismo = currentOrganismoSelected;
+                const selectedCircunscripcion = currentCircunscripcionSelected;
 
                 const filtrados = tramitesData.filter(tramite => {
                     const matchesSearch = searchTerm === '' ||
                         tramite.titulo.toLowerCase().includes(searchTerm) ||
                         tramite.descripcionCorta.toLowerCase().includes(searchTerm);
 
+                    // Soporta tanto organismo (string) como organismos (array)
+                    let organismos = [];
+                    if (Array.isArray(tramite.organismos)) {
+                        organismos = tramite.organismos;
+                    } else if (tramite.organismo) {
+                        organismos = [tramite.organismo];
+                    }
+                    
                     const matchesOrganismo = selectedOrganismo === '' ||
-                        tramite.organismo === selectedOrganismo;
+                        organismos.includes(selectedOrganismo);
 
-                    return matchesSearch && matchesOrganismo;
+                    // Soporta tanto circunscripcion (string) como circunscripciones (array)
+                    let circunscripciones = [];
+                    if (Array.isArray(tramite.circunscripciones)) {
+                        circunscripciones = tramite.circunscripciones;
+                    } else if (tramite.circunscripcion) {
+                        circunscripciones = [tramite.circunscripcion];
+                    }
+                    
+                    const matchesCircunscripcion = selectedCircunscripcion === '' ||
+                        circunscripciones.includes(selectedCircunscripcion);
+
+                    return matchesSearch && matchesOrganismo && matchesCircunscripcion;
                 });
 
                 if (filtrados.length === 0) {

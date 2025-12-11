@@ -53,7 +53,7 @@
 
 .portal-tramites .search-controls {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -350,10 +350,10 @@
     gap: 0.5rem;
 }
 
-.portal-tramites .accordion-section h4::before {
+/* .portal-tramites .accordion-section h4::before {
     content: "📌";
     font-size: 1.2rem;
-}
+} */
 
 .portal-tramites .accordion-section p {
     color: var(--gris-texto);
