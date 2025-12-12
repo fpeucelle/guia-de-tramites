@@ -120,6 +120,27 @@
     padding: 0.5rem;
 }
 
+/* Aviso Importante */
+.portal-tramites .important-note {
+    background: #fffbea;
+    border-left: 3px solid #e5c100;
+    color: #574a00;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    margin: 0.5rem auto 0;
+    max-width: 800px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    font-size: 0.95rem;
+}
+
+.portal-tramites .important-note .note-title {
+    font-weight: 700;
+    color: #8a6d00;
+    line-height: 1.2;
+}
+
 /* Badges */
 .portal-tramites .badge {
     display: inline-block;

@@ -1,0 +1,984 @@
+{
+  "tramites": [
+    {
+      "id": 1,
+      "titulo": "Autorización de viaje individual dentro de Argentina",
+      "organismos": [
+        "Juzgado de Paz de Rada Tilly"
+      ],
+      "circunscripciones": [
+        "Comodoro Rivadavia"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la autorización de viaje individual dentro de Argentina, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "❓ ¿Cuándo necesito realizar este trámite?",
+          "contenido": "- Cuando un menor de 18 años de edad tenga que viajar y no lo haga con alguno de sus progenitores.<br>Recuerde que los menores de 13 años deben hacerlo necesariamente acompañados de un mayor de 18 años de edad.<br>A partir de los 13 años de edad, ya pueden viajar solos."
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de Rada Tilly."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Híbrida: Solicitud En línea / Trámite y retiro Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del progenitor autorizante, con domicilio en Rada Tilly.<br>- Partida de nacimiento del niño, niña o adolescente a autorizar (si no se encuentra en la base de datos del Juzgado).<br>Debe digitalizar <b>ambos lados</b> de toda esta documentación como imagen."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Enviar la solicitud del trámite a la cuenta <a href='mailto:juzpazrt_mesa@juschubut.gov.ar'>juzpazrt_mesa@juschubut.gov.ar</a>, indicando:<br><b>Título:</b> Autorización de viaje individual dentro de Argentina<br><b>Detalle del mail:</b><br>- Apellido y nombre del progenitor autorizante:<br>- Fecha de ida:<br>- Fecha de regreso:<br>- Último lugar de destino:<br>- ¿Viaja acompañado/a?: Si/No<br>- Apellido y nombre del acompañante:<br>- DNI del acompañante:<br><b>IMPORTANTE:</b> Incluir como adjunto la documentación escaneada detallada en ¿Qué necesito?<br><br>2) Recibir por email el turno para concurrir al Juzgado.<br>Verifique la bandeja de correo no deseado (spam), si no recibió el turno dentro de los 2 días hábiles de enviado el mail.<br><br>3) Presentarse en el Juzgado de Paz de Rada Tilly con el DNI del progenitor autorizante, firmar y retirar la autorización solicitada."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "Dentro de los 2 días hábiles luego de enviada la solicitud."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Autorización de viaje al exterior",
+      "organismos": [
+        "Juzgado de Paz de Rada Tilly"
+      ],
+      "circunscripciones": [
+        "Comodoro Rivadavia"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la autorización de viaje al exterior, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "❓ ¿Cuándo necesito realizar este trámite?",
+          "contenido": "- Cuando un menor de 18 años de edad tenga que viajar y no lo haga con alguno de sus progenitores.<br>Recuerde que los menores de 13 años deben hacerlo necesariamente acompañados de un mayor de 18 años de edad.<br>A partir de los 13 años de edad, ya pueden viajar solos."
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de Rada Tilly."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Híbrida: Solicitud En línea / Trámite y retiro Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI de ambos progenitores autorizantes.<br>- Partida de nacimiento del niño, niña o adolescente a autorizar (si no se encuentra en la base de datos del Juzgado).<br>Debe digitalizar <b>ambos lados</b> de toda esta documentación como imagen."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Enviar la solicitud del trámite a la cuenta <a href='mailto:juzpazrt_mesa@juschubut.gov.ar'>juzpazrt_mesa@juschubut.gov.ar</a>, indicando:<br><b>Título:</b> Autorización de viaje al exterior<br><b>Detalle del mail:</b><br>- Apellido y nombre de los progenitores autorizantes:<br>- Fecha de ida:<br>- Fecha de regreso:<br>- Lugar de destino:<br>- ¿Viaja acompañado/a?: Si/No<br>- Apellido y nombre del acompañante:<br>- DNI del acompañante:<br><b>IMPORTANTE:</b> Incluir como adjunto la documentación escaneada detallada en ¿Qué necesito?<br><br>2) Recibir por email el turno para concurrir al Juzgado y la boleta de pago de la tasa judicial.<br>Verifique la bandeja de correo no deseado (spam), si no recibió el turno dentro de los 2 días hábiles de enviado el mail.<br><br>3) Realizar el pago de la tasa judicial.<br><br>4) Presentarse en el Juzgado de Paz de Rada Tilly con el DNI de los progenitores autorizantes y el comprobante de pago de la tasa de justicia.<br><br>5) Firmar y retirar la autorización solicitada.<br><br>6) Posteriormente, deberá pasar por la Cámara de Apelaciones de Comodoro Rivadavia a fin de que se le coloque el sello de agua al documento.<br><br>7) Finalmente, deberá acudir al Colegio de Escribanos, a los efectos de tramitar el Apostillado de la Haya.<br><br>En caso de viaje grupal, debe hacerse una autorización individual por cada uno de los niños, niñas y adolescentes a autorizar."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "Dentro de los 2 días hábiles luego de enviada la solicitud.<br>Deberá consultar ante los otros organismos el resto de la tramitación."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "El trámite ante el Juzgado de Paz, tiene un valor de 1 JUS, ya sea individual o grupal.<br>Los demás costos deberán ser consultados ante los otros organismos.<br>Consultar el valor vigente del JUS (<a href='https://www.juschubut.gov.ar/index.php/jus-admin-gral' target='_blank'>enlace</a>)"
+        },
+        {
+          "titulo": "⚠️ INFORMACIÓN IMPORTANTE:",
+          "contenido": "En Comodoro Rivadavia también puede realizar el trámite de Autorización de Viaje al Exterior en:<br>- Oficina de Migraciones: Cnel. José V. de Gral. Olavarría 358, Barrio Pueyrredón, Comodoro Rivadavia."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Autorización de menor de edad para carnet de conducir",
+      "organismos": [
+        "Juzgado de Paz de Rada Tilly"
+      ],
+      "circunscripciones": [
+        "Comodoro Rivadavia"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la autorización de menor de edad para carnet de conducir, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de Rada Tilly."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Híbrida: Solicitud En línea / Trámite y retiro Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del progenitor autorizante, con domicilio en Rada Tilly.<br>- Partida de nacimiento del niño, niña o adolescente a autorizar (si no se encuentra en la base de datos del Juzgado).<br>Debe digitalizar <b>ambos lados</b> de toda esta documentación como imagen."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Enviar la solicitud del trámite a la cuenta <a href='mailto:juzpazrt_mesa@juschubut.gov.ar'>juzpazrt_mesa@juschubut.gov.ar</a>, indicando:<br><b>Título:</b> Autorización de menor de edad para carnet de conducir<br><b>Detalle del mail:</b><br>- Apellido y nombre del progenitor autorizante:<br>- Apellido y nombre del adolescente:<br><b>IMPORTANTE:</b> Agregar como adjunto la documentación escaneada detallada en ¿Qué necesito?<br><br>2) Recibir por email el turno para concurrir al Juzgado.<br>Verifique la bandeja de correo no deseado (spam), si no recibió el turno dentro de los 2 días hábiles de enviado el mail.<br><br>3) Presentarse en el Juzgado de Paz de Rada Tilly con el DNI del progenitor autorizante, firmar y retirar la autorización solicitada."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "Dentro de los 2 días hábiles luego de enviada la solicitud."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Declaración Jurada de domicilio",
+      "organismos": [
+        "Juzgado de Paz de Rada Tilly"
+      ],
+      "circunscripciones": [
+        "Comodoro Rivadavia"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la Declaración Jurada de domicilio, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que necesiten declarar que viven en Rada Tilly."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Híbrida: Solicitud En línea / Trámite y retiro Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI con domicilio en Rada Tilly.<br>- Dos (2) testigos, mayores de edad y no familiares del solicitante, con sus respectivos DNI.<br><br>En caso de no contar con el cambio de domicilio en el DNI:<br>- DNI del Solicitante, acompañado del comprobante de cambio de domicilio iniciado en el Registro Civil en Rada Tilly.<br>- Dos (2) testigos, mayores de edad y no familiares del solicitante, con sus respectivos DNI.<br>Debe digitalizar <b>ambos lados</b> de toda esta documentación como imagen."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Enviar la solicitud del trámite a la cuenta <a href='mailto:juzpazrt_mesa@juschubut.gov.ar'>juzpazrt_mesa@juschubut.gov.ar</a>, indicando:<br><b>Título:</b> Declaración Jurada de domicilio<br><b>Detalle del mail:</b><br>- Apellido y nombre del solicitante:<br>- Domicilio del solicitante:<br><b>IMPORTANTE:</b> Agregar como adjunto la documentación escaneada detallada en ¿Qué necesito?, incluyendo la documentación de los testigos.<br><br>2) Recibir por email el turno para concurrir al Juzgado.<br>Verifique la bandeja de correo no deseado (spam), si no recibió el turno dentro de los 2 días hábiles de enviado el mail.<br><br>3) Presentarse en el Juzgado de Paz de Rada Tilly con el DNI del solicitante.<br>Recuerde concurrir junto con los 2 testigos y sus respectivos DNI.<br><br>4) Firmar y retirar la Declaración Jurada solicitada."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "Dentro de los 2 días hábiles luego de enviada la solicitud."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Declaración Jurada de ingresos",
+      "organismos": [
+        "Juzgado de Paz de Rada Tilly"
+      ],
+      "circunscripciones": [
+        "Comodoro Rivadavia"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la Declaración Jurada de ingresos, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que necesiten declarar los ingresos económicos que tienen y viven en el ejido de Rada Tilly."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Híbrida: Solicitud En línea / Trámite y retiro Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI con domicilio en Rada Tilly.<br>- Dos (2) testigos, mayores de edad y no familiares del solicitante, con sus respectivos DNI.<br><br>En caso de no contar con el cambio de domicilio en el DNI:<br>- DNI de la persona solicitante, acompañado del comprobante de cambio de domicilio iniciado en el Registro Civil en Rada Tilly.<br>- Dos (2) testigos, mayores de edad y no familiares del interesado, con sus respectivos DNI.<br>Debe digitalizar <b>ambos lados</b> de toda esta documentación como imagen."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Enviar la solicitud del trámite al correo <a href='mailto:juzpazrt_mesa@juschubut.gov.ar'>juzpazrt_mesa@juschubut.gov.ar</a>, indicando:<br><b>Título:</b> Declaración Jurada de ingresos<br><b>Detalle del mail:</b><br>- Apellido y nombre de la persona solicitante:<br>- Ingresos mensuales aproximados que tiene:<br><b>IMPORTANTE:</b> Agregar como adjunto la documentación escaneada detallada en ¿Qué necesito?, incluyendo la documentación de los testigos.<br><br>2) Recibir por email el turno para concurrir al Juzgado.<br>Verifique la bandeja de correo no deseado, si no recibió el turno dentro de los 2 días hábiles de enviado el mail.<br><br>3) Presentarse en el Juzgado de Paz de Rada Tilly con el DNI del solicitante.<br>Recuerde concurrir junto con los 2 testigos y sus respectivos DNI.<br><br>4) Firmar y retirar la Declaración Jurada solicitada."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "Dentro de los 2 días hábiles luego de enviada la solicitud."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        },
+        {
+          "titulo": "⚠️ INFORMACIÓN IMPORTANTE:",
+          "contenido": "No se realizan declaraciones juradas donde se declare que la persona se encuentra desocupada, sin ningún tipo de ingreso, para ello deberá gestionar la Certificación Negativa de Anses."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Información sumaria de concubinato",
+      "organismos": [
+        "Juzgado de Paz de Rada Tilly"
+      ],
+      "circunscripciones": [
+        "Comodoro Rivadavia"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la información sumaria de concubinato, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que necesiten obtener la información sumaria de concubinato y vivan en el mismo domicilio, en el ejido de Rada Tilly."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Híbrida: Solicitud En línea / Trámite y retiro Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI de la pareja con el mismo domicilio en Rada Tilly.<br>- Dos (2) testigos, mayores de edad y no familiares de los solicitantes, con sus respectivos DNI.<br><br>En caso de no contar con el cambio de domicilio en el DNI:<br>- DNI del solicitante, acompañado del comprobante de cambio de domicilio iniciado en el Registro Civil de Rada Tilly.<br>- Dos (2) testigos, mayores de edad y no familiares de los solicitantes, con sus respectivos DNI.<br><b>IMPORTANTE:</b> Los convivientes menores de 18 años deben presentarse acompañados de sus progenitores. Ambos con su DNI y el Certificado de Nacimiento del menor de edad.<br>Debe digitalizar <b>ambos lados</b> de toda esta documentación como imagen."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Enviar la solicitud del trámite al correo <a href='mailto:juzpazrt_mesa@juschubut.gov.ar'>juzpazrt_mesa@juschubut.gov.ar</a>, indicando:<br><b>Título:</b> Información sumaria de concubinato<br><b>Detalle del mail:</b><br>- Apellido y nombre de los solicitantes:<br>- Fecha desde la cual conviven:<br><b>IMPORTANTE:</b> Agregar como adjunto la documentación escaneada detallada en ¿Qué necesito?, incluyendo la documentación de los testigos y progenitores (si hubiera menores de edad).<br><br>2) Recibir por email el turno para concurrir al Juzgado.<br>Verifique la bandeja de correo no deseado (spam), si no recibió el turno dentro de los 2 días hábiles de enviado el mail.<br><br>3) Presentarse en el Juzgado de Paz de Rada Tilly las personas solicitantes, junto con todas las personas indicadas en «¿Qué necesito?», cada una con su DNI.<br><br>4) Firmar y retirar la información sumaria solicitada.<br><br><b>IMPORTANTE:</b> Cada uno de las personas solicitantes recibirá su respectiva información sumaria, para poder utilizarla en futuros trámites."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "Dentro de los 2 días hábiles luego de enviada la solicitud."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        },
+        {
+          "titulo": "⚠️ Nota:",
+          "contenido": "En caso que necesite tramitar una Unión Convivencial, deberá concurrir al Registro Civil de Rada Tilly."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Información sumaria de familiar a cargo",
+      "organismos": [
+        "Juzgado de Paz de Rada Tilly"
+      ],
+      "circunscripciones": [
+        "Comodoro Rivadavia"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la información sumaria de familiar a cargo, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que necesiten obtener la información sumaria de familiar a cargo y vivan en el mismo domicilio, en el ejido de Rada Tilly."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Híbrida: Solicitud En línea / Trámite y retiro Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI de la persona solicitante y todo su grupo familiar a cargo con el mismo domicilio en Rada Tilly.<br>- Dos (2) testigos, mayores de edad y no familiares de los interesados, con sus respectivos DNI.<br><br>En caso de no contar con el cambio de domicilio en el DNI:<br>- DNI de la persona solicitante y todo su grupo familiar a cargo con el mismo domicilio en Rada Tilly.<br>- Comprobante de cambio de domicilio iniciado en el Registro Civil de Rada Tilly de aquellas personas que no lo tengan actualizado.<br>- Dos (2) testigos, mayores de edad y no familiares de los interesados, con sus respectivos DNI.<br>Debe digitalizar <b>ambos lados</b> de toda esta documentación como imagen."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Enviar la solicitud del trámite al correo <a href='mailto:juzpazrt_mesa@juschubut.gov.ar'>juzpazrt_mesa@juschubut.gov.ar</a>, indicando:<br><b>Título:</b> Información sumaria de familiar a cargo<br><b>Detalle del mail:</b><br>- Apellido y nombre del solicitante:<br>- Apellido, nombre y parentesco de cada uno de los integrantes del grupo familiar:<br><b>IMPORTANTE:</b> Agregar como adjunto la documentación escaneada detallada en ¿Qué necesito?, incluyendo la de los testigos.<br><br>2) Recibir por email el turno para concurrir al Juzgado.<br>Verifique la bandeja de correo no deseado (spam), si no recibió el turno dentro de los 2 días hábiles de enviado el mail.<br><br>3) Presentarse en el Juzgado de Paz de Rada Tilly la persona solicitante con su DNI.<br>Recuerde concurrir junto a los 2 testigos y sus respectivos DNI.<br><br>4) Firmar y retirar la información sumaria solicitada."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "Dentro de los 2 días hábiles luego de enviada la solicitud."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Autorización de viaje a países limítrofes",
+      "organismos": [
+        "Juzgado de Paz de Rawson",
+        "Juzgado de Paz de Puerto Madryn"
+      ],
+      "circunscripciones": [
+        "Rawson",
+        "Puerto Madryn"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la autorización de viaje a países limítrofes, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del progenitor autorizante, con domicilio en esta ciudad.<br>- Partida de nacimiento del niño, niña o adolescente a autorizar, donde figuren los datos de sus progenitores."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar el certificado emitido en la Mesa de Entrada de Juzgado de Paz.<br><br>3) Posteriormente deberá pasar por la Cámara de Apelaciones a fin de que se le coloque el sello de agua al documento.<br><br>En caso de viaje grupal, debe hacerse una autorización individual por cada uno de los niños, niñas y adolescentes a autorizar."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz, se lleva la autorización para continuar con el trámite.<br>Deberá consultar ante los otros organismos el resto de la tramitación."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "El trámite ante el Juzgado de Paz, tiene un valor de 1 JUS, ya sea individual o grupal.<br>Demás costos deberán ser consultados ante los otros organismos.<br>Puede consultar el valor vigente del jus ingresando <a href='https://www.juschubut.gov.ar/index.php/jus-admin-gral' target='_blank'>aquí</a>."
+        },
+        {
+          "titulo": "⚠️ INFORMACIÓN IMPORTANTE:",
+          "contenido": "También puede realizar el trámite de Autorización de Viaje al Exterior en las Oficinas de Migración.<br>Hay oficinas en: Bariloche, Comodoro Rivadavia, Puerto Madryn y Rawson.<br>Para más información sobre el trámite ingrese <a href='https://www.argentina.gob.ar/servicio/autorizacion-de-viaje-para-menores-de-edad' target='_blank'>aquí</a>.<br>Para las direcciones y horarios de las oficinas ingrese <a href='https://www.argentina.gob.ar/interior/migraciones/delegaciones-y-oficinas-migratorias-autorizacion-de-salida-del-pais-de-ninos' target='_blank'>aquí</a>."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Autorización de viaje dentro de Argentina",
+      "organismos": [
+        "Juzgado de Paz de Rawson",
+        "Juzgado de Paz de Puerto Madryn"
+      ],
+      "circunscripciones": [
+        "Rawson",
+        "Puerto Madryn"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la autorización de viaje dentro de Argentina, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "❓ ¿Cuándo necesito realizar este trámite?",
+          "contenido": "- Cuando un menor de 18 años de edad tenga que viajar y no lo haga con alguno de sus progenitores.<br>Recuerde que los menores de 13 años deben hacerlo necesariamente acompañados de un mayor de 18 años de edad.<br>A partir de los 13 años de edad, ya puede viajar solos."
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del progenitor autorizante, con domicilio en esta ciudad.<br>- DNI o Partida de nacimiento del niño, niña o adolescente a autorizar, donde figuren los datos de sus progenitores."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar el certificado emitido en la Mesa de Entrada de Juzgado de Paz.<br><br>En caso de viaje grupal:<br>1) La institución que organiza el viaje (Escuela, Club, Iglesia, etc.) debe completar y entregar la planilla de viaje en el Juzgado de Paz.<br>Puede descargar la planilla en tamaño A4 <a href='https://drive.juschubut.gov.ar/s/md2d4WrLK2pL436' target='_blank'>aquí</a> y en oficio <a href='https://drive.juschubut.gov.ar/s/NmjA7ontxzMNMBQ' target='_blank'>aquí</a>.<br>2) Luego se acercan al Juzgado de Paz los adultos responsables del contingente con su DNI.<br>También puede hacerse una autorización individual por cada menor, conforme lo detallado anteriormente."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Declaraciones Juradas",
+      "organismos": [
+        "Juzgado de Paz de Rawson",
+        "Juzgado de Paz de Sarmiento",
+        "Juzgado de Paz de Puerto Madryn"
+      ],
+      "circunscripciones": [
+        "Rawson",
+        "Sarmiento",
+        "Puerto Madryn"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para las Declaraciones Juradas, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del solicitante, con domicilio en esta ciudad.<br>- Solicitud expresa del organismo requirente."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar la Declaración Jurada emitida en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz, se lleva la Declaración Jurada."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        },
+        {
+          "titulo": "⚠️ INFORMACIÓN IMPORTANTE:",
+          "contenido": "No se realizan Declaraciones Juradas donde se declare que la persona se encuentra desocupada, sin ningún tipo de ingreso, para ello deberá gestionar la Certificación Negativa de Anses."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Informaciones Sumarias (Concubinato, Familiar a cargo, etc.)",
+      "organismos": [
+        "Juzgado de Paz de Rawson",
+        "Juzgado de Paz de Puerto Madryn"
+      ],
+      "circunscripciones": [
+        "Rawson",
+        "Puerto Madryn"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para las Informaciones Sumarias, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del solicitante, con domicilio en esta ciudad.<br>- 2 testigos, que no sean parientes del declarante, mayores de 18 años, con DNI y con domicilio acreditado en esta ciudad."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito? y los 2 testigos.<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar la Información Sumaria emitida en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz, se lleva la Información Sumaria."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        },
+        {
+          "titulo": "⚠️ Requisitos para Información Sumaria de Concubinato:",
+          "contenido": "- Los anteriores mencionados en Información Sumaria.<br>- La pareja deberá presentarse con los DNI y tener en ambos el mismo domicilio en esta ciudad.<br>- Los convivientes menores de 18 años, deben venir acompañados de su madre y padre. Ambos con su DNI y el Certificado de Nacimiento del menor de edad.<br>En caso que necesite tramitar una Unión Convivencial, deberá concurrir al Registro Civil."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "Certificado de Supervivencia",
+      "organismos": [
+        "Juzgado de Paz de Rawson",
+        "Juzgado de Paz de Sarmiento",
+        "Juzgado de Paz de Puerto Madryn"
+      ],
+      "circunscripciones": [
+        "Rawson",
+        "Sarmiento",
+        "Puerto Madryn"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para los Certificados de Supervivencia, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del solicitante, con domicilio en esta ciudad.<br>- Nombre de la entidad que lo solicita."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar el Certificado de Supervivencia en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz, se lleva el Certificado de Supervivencia."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "Autorización de viaje de menores al exterior",
+      "organismos": [
+        "Juzgado de Paz de Sarmiento"
+      ],
+      "circunscripciones": [
+        "Sarmiento"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la autorización de viaje de menores de edad al exterior, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del progenitor o progenitores autorizantes, con domicilio en esta ciudad.<br>- Partida de nacimiento del niño, niña o adolescente a autorizar, donde figuren los datos de sus progenitores.<br>- DNI del niño, niña o adolescente a autorizar.<br>- DNI acompañante si correspondiere."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar el certificado emitido en la Mesa de Entrada de Juzgado de Paz.<br><br>3) Posteriormente deberá pasar por la <a href='https://www.juschubut.gov.ar/index.php/organizacion/poder-judicial/circunscripcion-comodoro-rivadavia/camara-de-apelaciones-civil-comodoro-rivadavia' target='_blank'>Cámara de Apelaciones de Comodoro Rivadavia</a> a fin de que se le coloque el sello de agua al documento.<br><br>4) Finalmente deberá acudir al Colegio de Escribanos, a los efectos de tramitar el Apostillado de la Haya, si correspondiere."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz, se lleva la autorización para continuar con el trámite.<br>Deberá consultar ante los otros organismos el resto de la tramitación."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "El trámite ante el Juzgado de Paz, tiene un valor de 1 JUS.<br>Demás costos deberán ser consultados ante los otros organismos.<br>Puede consultar el valor vigente del jus ingresando <a href='https://www.juschubut.gov.ar/index.php/jus-admin-gral' target='_blank'>aquí</a>."
+        },
+        {
+          "titulo": "⚠️ INFORMACIÓN IMPORTANTE:",
+          "contenido": "También puede realizar el trámite de Autorización de Viaje al Exterior en las Oficinas de Migración.<br>Hay oficinas en: Bariloche, Comodoro Rivadavia, Puerto Madryn y Rawson.<br>Para más información sobre el trámite ingrese <a href='https://www.argentina.gob.ar/servicio/autorizacion-de-viaje-para-menores-de-edad' target='_blank'>aquí</a>.<br>Para las direcciones y horarios de las oficinas ingrese <a href='https://www.argentina.gob.ar/interior/migraciones/delegaciones-y-oficinas-migratorias-autorizacion-de-salida-del-pais-de-ninos' target='_blank'>aquí</a>."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titulo": "Autorización de viaje de menores dentro de Argentina",
+      "organismos": [
+        "Juzgado de Paz de Sarmiento"
+      ],
+      "circunscripciones": [
+        "Sarmiento"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la autorización de viaje de menores de edad dentro de Argentina, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "❓ ¿Cuándo necesito realizar este trámite?",
+          "contenido": "- Cuando un menor de 18 años de edad tenga que viajar y no lo haga con alguno de sus progenitores.<br>Recuerde que los menores de 13 años deben hacerlo necesariamente acompañados de un mayor de 18 años de edad.<br>A partir de los 13 años de edad, ya puede viajar solos."
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del progenitor autorizante, con domicilio en esta ciudad.<br>- Partida de nacimiento del niño, niña o adolescente a autorizar.<br>- DNI del niño, niña o adolescente a autorizar.<br>- DNI acompañante si correspondiere."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar el certificado emitido en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titulo": "Carta Poder",
+      "organismos": [
+        "Juzgado de Paz de Sarmiento",
+        "Juzgado de Paz de Puerto Madryn"
+      ],
+      "circunscripciones": [
+        "Sarmiento",
+        "Puerto Madryn"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para la Carta Poder, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DNI del solicitante, con domicilio en esta ciudad.<br>- Poder confeccionado por el Letrado, con duplicado."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar la Carta Poder en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz, se lleva la Carta Poder."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito."
+        },
+        {
+          "titulo": "⚠️ INFORMACIÓN IMPORTANTE:",
+          "contenido": "Los Poderes para presentar en los Juzgados de la jurisdicción, deben tramitarse ante el Juzgado correspondiente."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "titulo": "Marcas y Señales: Guías de traslado de Hacienda/Lana",
+      "organismos": [
+        "Juzgado de Paz de Sarmiento"
+      ],
+      "circunscripciones": [
+        "Sarmiento"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Para Marcas y Señales: Guías de traslado de Hacienda/Lana, estos son los requisitos y características del trámite.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Productores registrados en este Juzgado de Paz."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "- DTe.<br>- Certificado de Adquisición/Libreta Sanitaria, si correspondiere.<br>- Datos de Transporte: Marca, Dominio / Acoplado o carro, Dominio.<br>- Datos del Transportista: Nombre y Apellido, DNI."
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar la Guía emitida en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado Paz, se lleva la Guía de Traslado."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "La Guía tiene un costo que debe ser abonado en ARECH (Agencia de Recaudación de la Pcia. Del Chubut).<br>Puede consultar el valor vigente ingresando al siguiente link: <a href='https://servicios.dgrchubut.gov.ar/modulos/tasas.php' target='_blank'>https://servicios.dgrchubut.gov.ar/modulos/tasas.php</a>"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "titulo": "Registro Civil - Nacimientos",
+      "organismos": [
+        "Juzgado de Paz de Sarmiento"
+      ],
+      "circunscripciones": [
+        "Sarmiento"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Requisitos y características de los trámites relacionados con Nacimientos.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📋 Aquí podrá realizar trámites relacionados con:",
+          "contenido": "- Nacimientos"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "Vea el detalle de los trámites relacionados en el siguiente link:<br>- <a href='https://www.gobierno.chubut.gov.ar/registrocivil/nacimientos/' target='_blank'>Nacimientos - Ministerio de Gobierno del Chubut</a>"
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar el Acta emitido en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado de Paz, se lleva el Acta."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Gratuito dentro del término de 6 meses, luego tiene un costo que debe ser abonado en Rentas.<br>Puede consultar el valor vigente ingresando aquí: <a href='https://servicios.dgrchubut.gov.ar/modulos/tasas.php' target='_blank'>https://servicios.dgrchubut.gov.ar/modulos/tasas.php</a>"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "titulo": "Registro Civil - Uniones Convivenciales",
+      "organismos": [
+        "Juzgado de Paz de Sarmiento"
+      ],
+      "circunscripciones": [
+        "Sarmiento"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Requisitos y características de los trámites relacionados con Uniones Convivenciales.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📋 Aquí podrá realizar trámites relacionados con:",
+          "contenido": "- Uniones Convivenciales"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "Vea el detalle de los trámites relacionados en el siguiente link:<br>- <a href='https://www.gobierno.chubut.gov.ar/inscrip_union-convivencial/' target='_blank'>Inscripción de la Unión Convivencial - Ministerio de Gobierno del Chubut</a><br>- <a href='https://www.gobierno.chubut.gov.ar/cese-union-convivencial/' target='_blank'>Cese de la Unión Convivencial - Ministerio de Gobierno del Chubut</a>"
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar el Acta emitida en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado de Paz, se lleva el Acta."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Tiene un costo que debe ser abonado en Rentas.<br>Puede consultar el valor vigente ingresando aquí: <a href='https://servicios.dgrchubut.gov.ar/modulos/tasas.php' target='_blank'>https://servicios.dgrchubut.gov.ar/modulos/tasas.php</a>"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "titulo": "Registro Civil - Matrimonios",
+      "organismos": [
+        "Juzgado de Paz de Sarmiento"
+      ],
+      "circunscripciones": [
+        "Sarmiento"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Requisitos y características de los trámites relacionados con Matrimonios.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📋 Aquí podrá realizar trámites relacionados con:",
+          "contenido": "- Matrimonios"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "Vea el detalle de los trámites relacionados en el siguiente link:<br>- <a href='https://www.gobierno.chubut.gov.ar/inscripcion-de-matrimonio/' target='_blank'>Inscripción de Matrimonios - Ministerio de Gobierno del Chubut</a>"
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar el Acta emitido en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado de Paz, se lleva el Acta."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "Tiene un costo que debe ser abonado en Rentas.<br>Puede consultar el valor vigente ingresando aquí: <a href='https://servicios.dgrchubut.gov.ar/modulos/tasas.php' target='_blank'>https://servicios.dgrchubut.gov.ar/modulos/tasas.php</a>"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "titulo": "Registro Civil - Defunciones",
+      "organismos": [
+        "Juzgado de Paz de Sarmiento"
+      ],
+      "circunscripciones": [
+        "Sarmiento"
+      ],
+      "tipo": "guia",
+      "tipoLabel": "Guía",
+      "componenteTipo": "acordeon",
+      "descripcionCorta": "Requisitos y características de los trámites relacionados con Defunciones.",
+      "pdfUrl": "",
+      "secciones": [
+        {
+          "titulo": "",
+          "contenido": "Estos son los requisitos y características del trámite:"
+        },
+        {
+          "titulo": "📋 Aquí podrá realizar trámites relacionados con:",
+          "contenido": "- Defunciones"
+        },
+        {
+          "titulo": "📍 ¿A quién está dirigido?",
+          "contenido": "- Personas que tengan domicilio en el ejido municipal de esta ciudad."
+        },
+        {
+          "titulo": "🏦 Modalidad",
+          "contenido": "- Presencial."
+        },
+        {
+          "titulo": "📋 ¿Qué necesito?",
+          "contenido": "Vea el detalle de los trámites relacionados en el siguiente link:<br>- <a href='https://www.gobierno.chubut.gov.ar/defunciones/' target='_blank'>Defunciones - Ministerio de Gobierno del Chubut</a>"
+        },
+        {
+          "titulo": "🔢 ¿Cómo hago?",
+          "contenido": "1) Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original que figura en ¿Qué necesito?<br>Se atiende por orden de llegada, sin turno previo.<br><br>2) Retirar el Acta emitido en la Mesa de Entrada de Juzgado de Paz."
+        },
+        {
+          "titulo": "⏱️ ¿Cuánto tiempo lleva hacer el trámite?",
+          "contenido": "En el mismo día que se presenta en el Juzgado de Paz, se lleva el Acta."
+        },
+        {
+          "titulo": "💰 ¿Cuál es el costo del trámite?",
+          "contenido": "- La primeras cuatro (4) actas se entregan juntas y sin costo.<br>- Luego si se necesitan más actas, tiene un costo que se abona en Rentas.<br>Puede consultar el valor vigente ingresando aquí: <a href='https://servicios.dgrchubut.gov.ar/modulos/tasas.php' target='_blank'>https://servicios.dgrchubut.gov.ar/modulos/tasas.php</a>"
+        }
+      ]
+    }
+  ]
+}

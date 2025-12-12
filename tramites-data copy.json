@@ -1,0 +1,212 @@
+{
+    "tramites": [
+        {
+            "id": 2,
+            "titulo": "Asignación de Causas de Cámara",
+            "organismos": ["Cámara de Apelaciones Civil - Comodoro Rivadavia"],
+            "circunscripcion": "Comodoro Rivadavia",
+            "tipo": "pauta",
+            "tipoLabel": "Pauta",
+            "componenteTipo": "tarjeta",
+            "descripcionCorta": "Documento oficial que establece el procedimiento y criterios para la asignación de causas judiciales a los distintos miembros de la Cámara de Apelaciones Civil. Acuerdo N° 15/2021.",
+            "pdfUrl": "https://www.juschubut.gov.ar/images/ACUERDO-Nro-15_2021.pdf"
+        },
+        {
+            "id": 5,
+            "titulo": "Pautas de tramitación en lo Contencioso Administrativo",
+            "organismos": ["Juzgado en lo Contencioso Administrativo - Esquel"],
+            "circunscripcion": "Esquel",
+            "tipo": "pauta",
+            "tipoLabel": "Pauta",
+            "componenteTipo": "acordeon",
+            "descripcionCorta": "Lineamientos procedimentales para causas en el fuero Contencioso Administrativo",
+            "pdfUrl": "",
+            "secciones": [
+                {
+                    "titulo": "Consideraciones generales",
+                    "contenido": "Las pautas de tramitación establecen los lineamientos procedimentales específicos para la presentación y tramitación de causas en el fuero Contencioso Administrativo."
+                },
+                {
+                    "titulo": "Ámbito de aplicación",
+                    "contenido": "Circunscripción Judicial de Esquel y zona de influencia. Comprende controversias entre particulares y el Estado Provincial, Municipal o entes autárquicos."
+                },
+                {
+                    "titulo": "Documentación requerida",
+                    "contenido": "- Escrito de demanda con fundamentación legal\n- Prueba documental pertinente\n- Acreditación de personería si corresponde\n- Comprobante de tasa judicial"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "titulo": "Guía para oficios a confronte",
+            "organismos": ["Juzgado Laboral N° 1 - Puerto Madryn"],
+            "circunscripcion": "Puerto Madryn",
+            "tipo": "modelo",
+            "tipoLabel": "Modelo",
+            "componenteTipo": "tarjeta",
+            "descripcionCorta": "Los oficios se deben subir por Serconex como cualquier otro escrito judicial, directamente sin requerir otro escrito. En caso que corresponda su libramiento, se firmará en soporte papel y se dejará en mesa de entradas.",
+            "pdfUrl": ""
+        },
+        {
+            "id": 7,
+            "titulo": "Cesión de honorarios - Pautas",
+            "organismos": ["Juzgado Laboral N° 1 - Puerto Madryn"],
+            "circunscripcion": "Puerto Madryn",
+            "tipo": "pauta",
+            "tipoLabel": "Pauta",
+            "componenteTipo": "tarjeta",
+            "descripcionCorta": "Para que proceda la cesión de honorarios se requiere conformidad expresa del cesionario mediante escrito por Serconex con firma ológrafa. En caso de requerirse ratificación ante Actuario se indicará por providencia.",
+            "pdfUrl": ""
+        },
+        {
+            "id": 8,
+            "titulo": "Presentación de Certificados de Trabajo",
+            "organismos": ["Juzgado Laboral N° 2 - Puerto Madryn"],
+            "circunscripcion": "Puerto Madryn",
+            "tipo": "modelo",
+            "tipoLabel": "Modelo",
+            "componenteTipo": "tarjeta",
+            "descripcionCorta": "Los certificados de trabajo deberán presentarse en original en soporte papel por mesa de entradas, debiendo paralelamente o previamente subir a Serconex el escrito que indica su presentación.",
+            "pdfUrl": ""
+        },
+        {
+            "id": 9,
+            "titulo": "Reclamo psicológico en Accidentes de Trabajo",
+            "organismos": ["Juzgado Laboral N° 3 - Puerto Madryn"],
+            "circunscripcion": "Puerto Madryn",
+            "tipo": "pauta",
+            "tipoLabel": "Pauta",
+            "componenteTipo": "acordeon",
+            "descripcionCorta": "Requisitos para reclamos de incapacidad psicológica derivada de accidentes laborales",
+            "pdfUrl": "",
+            "secciones": [
+                {
+                    "titulo": "Requisito previo",
+                    "contenido": "En caso de reclamarse este rubro, previo a ordenar el traslado de la demanda se le requerirá a la parte actora que acredite mediante presentación del correspondiente certificado, respecto de la incapacidad psicológica o psiquiátrica que refiera padecer."
+                },
+                {
+                    "titulo": "Documentación necesaria",
+                    "contenido": "- Certificado médico de profesional especializado (psicólogo o psiquiatra)\n- Debe especificar el diagnóstico y grado de incapacidad\n- Relación de causalidad con el accidente de trabajo\n- Estudios complementarios si corresponde"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "titulo": "Presentación de documentación física",
+            "organismos": ["Juzgado de Ejecución N° 1 - Comodoro Rivadavia"],
+            "circunscripcion": "Comodoro Rivadavia",
+            "tipo": "pauta",
+            "tipoLabel": "Pauta",
+            "componenteTipo": "tarjeta",
+            "descripcionCorta": "La documentación física se presenta por mesa de entradas debiendo paralelamente o previamente subir a Serconex el escrito que indica su presentación. Horario de atención: lunes a viernes de 7:00 a 13:00 hs.",
+            "pdfUrl": ""
+        },
+        {
+            "id": 11,
+            "titulo": "Cédulas de notificación",
+            "organismos": ["Juzgado de Ejecución N° 3 - Comodoro Rivadavia"],
+            "circunscripcion": "Comodoro Rivadavia",
+            "tipo": "modelo",
+            "tipoLabel": "Modelo",
+            "componenteTipo": "tarjeta",
+            "descripcionCorta": "Las cédulas de notificación se presentan directamente por mesa de entradas para su control. Deben cumplir con los requisitos formales establecidos por el Código Procesal.",
+            "pdfUrl": ""
+        },
+        {
+            "id": 12,
+            "titulo": "Pautas para audiencias judiciales",
+            "organismos": ["Juzgado de Familia - Esquel"],
+            "circunscripcion": "Esquel",
+            "tipo": "pauta",
+            "tipoLabel": "Pauta",
+            "componenteTipo": "tarjeta",
+            "descripcionCorta": "Lineamientos para la participación en audiencias judiciales, tanto presenciales como remotas. Incluye requisitos de conexión, conducta procesal y documentación necesaria.",
+            "pdfUrl": ""
+        },
+
+        {
+            "id": 15,
+            "titulo": "Pautas de tramitación civil y comercial",
+            "organismos": ["Juzgado Civil y Comercial N° 1 - Trelew"],
+            "circunscripcion": "Trelew",
+            "tipo": "pauta",
+            "tipoLabel": "Pauta",
+            "componenteTipo": "tarjeta",
+            "descripcionCorta": "Lineamientos procedimentales para la tramitación de causas civiles y comerciales. Incluye plazos, formas de notificación, presentación de pruebas y demás aspectos procesales.",
+            "pdfUrl": ""
+        },
+        {
+            "id": 18,
+            "titulo": "Declaraciones Juradas",
+            "organismos": ["Juzgado de Paz - Sarmiento"],
+            "circunscripcion": "Sarmiento",
+            "tipo": "modelo",
+            "tipoLabel": "Modelo",
+            "componenteTipo": "acordeon",
+            "descripcionCorta": "Trámite de declaración jurada ante el Juzgado de Paz. Requiere presencia de dos testigos. Servicio gratuito.",
+            "pdfUrl": "",
+            "secciones": [
+                {
+                    "titulo": "¿Cómo hago?",
+                    "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original (sin turno previo, por orden de llegada)\n2. A las 24 hs., retirar la Declaración Jurada emitida en la Mesa de Entrada"
+                },
+                {
+                    "titulo": "Tiempo",
+                    "contenido": "24 horas desde la presentación con los dos testigos."
+                },
+                {
+                    "titulo": "Costo",
+                    "contenido": "Gratuito"
+                },
+                {
+                    "titulo": "Importante",
+                    "contenido": "Los convivientes menores de 18 años deben consultar en Asesoría de Familia (Ingeniero Coronel nº 345 - Sarmiento - Tel: 0297 489-3400)"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "titulo": "Carta Poder",
+            "organismos": ["Juzgado de Paz - Sarmiento"],
+            "circunscripcion": "Sarmiento",
+            "tipo": "modelo",
+            "tipoLabel": "Modelo",
+            "componenteTipo": "acordeon",
+            "descripcionCorta": "Confección de carta poder ante el Juzgado de Paz. Se entrega el mismo día. Servicio gratuito.",
+            "pdfUrl": "",
+            "secciones": [
+                {
+                    "titulo": "¿Qué necesito?",
+                    "contenido": "- Poder confeccionado por el Letrado, con duplicado"
+                },
+                {
+                    "titulo": "¿Cómo hago?",
+                    "contenido": "1. Presentarse en la Mesa de Entrada del Juzgado de Paz con la documentación original (sin turno previo, por orden de llegada)\n2. Retirar la Carta Poder en la Mesa de Entrada"
+                },
+                {
+                    "titulo": "Tiempo",
+                    "contenido": "Se entrega el mismo día."
+                },
+                {
+                    "titulo": "Costo",
+                    "contenido": "Gratuito"
+                },
+                {
+                    "titulo": "Importante",
+                    "contenido": "Los Poderes para presentar en los Juzgados de la jurisdicción de Sarmiento deben tramitarse ante el Juzgado correspondiente."
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "titulo": "Certificado de Supervivencia",
+            "organismos": ["Juzgado de Paz - Sarmiento"],
+            "circunscripcion": "Sarmiento",
+            "tipo": "modelo",
+            "tipoLabel": "Modelo",
+            "componenteTipo": "tarjeta",
+            "descripcionCorta": "Certificación de supervivencia para trámites previsionales o bancarios. Se entrega el mismo día. Servicio gratuito.",
+            "pdfUrl": ""
+        }
+    ]
+}
