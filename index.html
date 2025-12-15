@@ -1,469 +1,602 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Portal de Trámites - Demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Portal de Trámites - Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS del portal -->
-    <link rel="stylesheet" href="portal-tramites-styles.css">
+        <!-- CSS del portal -->
+        <link rel="stylesheet" href="portal-tramites-styles.css" />
 
-    <!-- jQuery (necesario para el script del portal) -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-        crossorigin="anonymous"></script>
-</head>
-<body>
-
-<!-- ============================================
+        <!-- jQuery (necesario para el script del portal) -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <!-- ============================================
      PORTAL DE TRÁMITES - CONTENIDO
      Adaptado para página estática (GitHub Pages)
 ============================================ -->
 
-<div class="portal-tramites">
-    <!-- Sección de Búsqueda -->
-    <div class="search-section">
-        <div class="search-header">
-            <h2>Portal de Trámites</h2>
-            <p>Buscá por título y filtrá por organismo</p>
-        </div>
+        <div class="portal-tramites">
+            <!-- Sección de Búsqueda -->
+            <div class="search-section">
+                <div class="search-header">
+                    <h2>Portal de Trámites</h2>
+                    <p>Buscá por título y filtrá por organismo</p>
+                </div>
 
-        <div class="search-controls">
-            <div class="search-input-wrapper">
-                <span class="search-icon">🔍</span>
-                <input type="text" id="searchInputTramites" class="search-input"
-                       placeholder="Buscar por título del trámite...">
+                <div class="search-controls">
+                    <div class="search-input-wrapper">
+                        <span class="search-icon">🔍</span>
+                        <input
+                            type="text"
+                            id="searchInputTramites"
+                            class="search-input"
+                            placeholder="Buscar por título del trámite..."
+                        />
+                    </div>
+
+                    <div class="search-input-wrapper">
+                        <span class="search-icon">🏛️</span>
+                        <select id="organismoFilterTramites" class="filter-select">
+                            <option value="">Todos los organismos</option>
+                            <!-- Opciones se llenarán dinámicamente desde el JSON -->
+                        </select>
+                    </div>
+
+                    <div class="search-input-wrapper">
+                        <span class="search-icon">🗺️</span>
+                        <select id="circunscripcionFilterTramites" class="filter-select">
+                            <option value="">Todas las circunscripciones</option>
+                            <!-- Opciones se llenarán dinámicamente desde el JSON -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="search-stats" id="searchStatsTramites">
+                    Mostrando <strong id="resultCountTramites">0</strong> trámites
+                </div>
+                <div class="important-note" id="importantNote">
+                    <span class="note-title">⚠️</span>
+                    <span>
+                        En caso que sugerencias o solicitudes por favor utilice el
+                        <strong>"Chat de Orientacion"</strong> que en esta misma página. Primero
+                        escriba <strong>"Operadora"</strong>, y luego deje su mail de contacto,
+                        junto con su aporte.
+                    </span>
+                </div>
             </div>
 
-            <div class="search-input-wrapper">
-                <span class="search-icon">🏛️</span>
-                <select id="organismoFilterTramites" class="filter-select">
-                    <option value="">Todos los organismos</option>
-                    <!-- Opciones se llenarán dinámicamente desde el JSON -->
-                </select>
+            <div
+                class="search-subtitle"
+                id="selectedOrganismoSubtitle"
+                style="
+                    text-align: center;
+                    font-size: 1.15rem;
+                    font-weight: 600;
+                    color: #1f385e;
+                    margin-top: 0.5rem;
+                    display: none;
+                "
+            ></div>
+
+            <!-- Grid de Trámites (se llena dinámicamente) -->
+            <div class="tramites-grid" id="tramitesGridJoomla"></div>
+
+            <!-- Mensaje cuando no hay resultados -->
+            <div class="no-results" id="noResultsTramites" style="display: none">
+                <div class="no-results-icon">🔍</div>
+                <h3>No se encontraron resultados</h3>
+                <p>Intenta con otros términos de búsqueda o selecciona otro organismo</p>
             </div>
-
-            <div class="search-input-wrapper">
-                <span class="search-icon">🗺️</span>
-                <select id="circunscripcionFilterTramites" class="filter-select">
-                    <option value="">Todas las circunscripciones</option>
-                    <!-- Opciones se llenarán dinámicamente desde el JSON -->
-                </select>
-            </div>
         </div>
 
-        <div class="search-stats" id="searchStatsTramites">
-            Mostrando <strong id="resultCountTramites">0</strong> trámites
-        </div>
-        <div class="important-note" id="importantNote">
-            <span class="note-title">⚠️</span>
-            <span>
-                En caso que sugerencias o solicitudes por favor utilice el <strong>"Chat de Orientacion"</strong> que en esta misma página. Primero escriba <strong>"Operadora"</strong>, y luego deje su mail de contacto, junto con su aporte.
-            </span>
-        </div>
-    </div>
-
-    <div class="search-subtitle" id="selectedOrganismoSubtitle" style="
-        text-align:center;
-        font-size:1.15rem;
-        font-weight:600;
-        color:#1f385e;
-        margin-top:0.5rem;
-        display:none;
-    "></div>
-
-    <!-- Grid de Trámites (se llena dinámicamente) -->
-    <div class="tramites-grid" id="tramitesGridJoomla"></div>
-
-    <!-- Mensaje cuando no hay resultados -->
-    <div class="no-results" id="noResultsTramites" style="display: none;">
-        <div class="no-results-icon">🔍</div>
-        <h3>No se encontraron resultados</h3>
-        <p>Intenta con otros términos de búsqueda o selecciona otro organismo</p>
-    </div>
-</div>
-
-<!-- ============================================
+        <!-- ============================================
      SCRIPT DEL PORTAL
 ============================================ -->
-<script>
-    (function ($) {
-        'use strict';
+        <script>
+            (function ($) {
+                'use strict';
 
-        // Variables globales para mantener el estado de los filtros
-        let currentOrganismoSelected = '';
-        let currentCircunscripcionSelected = '';
+                // Variables globales para mantener el estado de los filtros
+                let currentOrganismoSelected = '';
+                let currentCircunscripcionSelected = '';
 
-        $(document).ready(function () {
+                $(document).ready(function () {
+                    // ========================================
+                    // CONFIGURACIÓN
+                    // ========================================
+                    // Para GitHub Pages asumimos que tramites-data.json
+                    // está en la misma carpeta que index.html
+                    const JSON_DATA_URL = 'tramites-data.json';
 
-            // ========================================
-            // CONFIGURACIÓN
-            // ========================================
-            // Para GitHub Pages asumimos que tramites-data.json
-            // está en la misma carpeta que index.html
-            const JSON_DATA_URL = 'tramites-data.json';
+                    let tramitesData = [];
+                    let $searchInput = $('#searchInputTramites');
+                    let $organismoFilter = $('#organismoFilterTramites');
+                    let $circunscripcionFilter = $('#circunscripcionFilterTramites');
+                    let $tramitesGrid = $('#tramitesGridJoomla');
+                    let $resultCount = $('#resultCountTramites');
+                    let $noResults = $('#noResultsTramites');
+                    let $selectedOrganismoSubtitle = $('#selectedOrganismoSubtitle');
 
-            let tramitesData = [];
-            let $searchInput = $('#searchInputTramites');
-            let $organismoFilter = $('#organismoFilterTramites');
-            let $circunscripcionFilter = $('#circunscripcionFilterTramites');
-            let $tramitesGrid = $('#tramitesGridJoomla');
-            let $resultCount = $('#resultCountTramites');
-            let $noResults = $('#noResultsTramites');
-            let $selectedOrganismoSubtitle = $('#selectedOrganismoSubtitle');
+                    // ========================================
+                    // Cargar datos JSON
+                    // ========================================
+                    $.getJSON(JSON_DATA_URL, function (data) {
+                        tramitesData = data.tramites;
+                        inicializarPortal();
 
-            // ========================================
-            // Cargar datos JSON
-            // ========================================
-            $.getJSON(JSON_DATA_URL, function (data) {
-                tramitesData = data.tramites;
-                inicializarPortal();
-                
-                // Leer parámetros de URL de forma robusta
-                try {
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const organismoParam = urlParams.get('organismo');
-                    const circunscripcionParam = urlParams.get('circunscripcion');
-                    
-                    // Validar y aplicar filtro de organismo
-                    if (organismoParam && organismoParam.trim() !== '') {
-                        const organismos = [...new Set(tramitesData.flatMap(t => 
-                            Array.isArray(t.organismos) ? t.organismos : (t.organismo ? [t.organismo] : [])
-                        ))];
-                        
-                        if (organismos.includes(organismoParam)) {
-                            currentOrganismoSelected = organismoParam;
-                            $organismoFilter.val(organismoParam);
-                        } else {
-                            console.warn(`Organismo no encontrado: "${organismoParam}"`);
+                        // Leer parámetros de URL de forma robusta
+                        try {
+                            const urlParams = new URLSearchParams(window.location.search);
+                            const organismoParam = urlParams.get('organismo');
+                            const circunscripcionParam = urlParams.get('circunscripcion');
+
+                            // Validar y aplicar filtro de organismo
+                            if (organismoParam && organismoParam.trim() !== '') {
+                                const organismos = [
+                                    ...new Set(
+                                        tramitesData.flatMap(t =>
+                                            Array.isArray(t.organismos)
+                                                ? t.organismos
+                                                : t.organismo
+                                                ? [t.organismo]
+                                                : []
+                                        )
+                                    ),
+                                ];
+
+                                if (organismos.includes(organismoParam)) {
+                                    currentOrganismoSelected = organismoParam;
+                                    $organismoFilter.val(organismoParam);
+                                } else {
+                                    console.warn(`Organismo no encontrado: "${organismoParam}"`);
+                                }
+                            }
+
+                            // Validar y aplicar filtro de circunscripción
+                            if (circunscripcionParam && circunscripcionParam.trim() !== '') {
+                                const circunscripciones = [
+                                    ...new Set(
+                                        tramitesData.flatMap(t =>
+                                            Array.isArray(t.circunscripciones)
+                                                ? t.circunscripciones
+                                                : t.circunscripcion
+                                                ? [t.circunscripcion]
+                                                : []
+                                        )
+                                    ),
+                                ];
+
+                                if (circunscripciones.includes(circunscripcionParam)) {
+                                    currentCircunscripcionSelected = circunscripcionParam;
+                                    $circunscripcionFilter.val(circunscripcionParam);
+                                } else {
+                                    console.warn(
+                                        `Circunscripción no encontrada: "${circunscripcionParam}"`
+                                    );
+                                }
+                            }
+
+                            // Aplicar filtros si hay alguno
+                            if (organismoParam || circunscripcionParam) {
+                                filtrarTramites();
+                            }
+                        } catch (error) {
+                            console.error('Error al procesar parámetros de URL:', error);
                         }
-                    }
-                    
-                    // Validar y aplicar filtro de circunscripción
-                    if (circunscripcionParam && circunscripcionParam.trim() !== '') {
-                        const circunscripciones = [...new Set(tramitesData.flatMap(t => 
-                            Array.isArray(t.circunscripciones) ? t.circunscripciones : (t.circunscripcion ? [t.circunscripcion] : [])
-                        ))];
-                        
-                        if (circunscripciones.includes(circunscripcionParam)) {
-                            currentCircunscripcionSelected = circunscripcionParam;
-                            $circunscripcionFilter.val(circunscripcionParam);
-                        } else {
-                            console.warn(`Circunscripción no encontrada: "${circunscripcionParam}"`);
-                        }
-                    }
-                    
-                    // Aplicar filtros si hay alguno
-                    if (organismoParam || circunscripcionParam) {
-                        filtrarTramites();
-                    }
-                } catch (error) {
-                    console.error('Error al procesar parámetros de URL:', error);
-                }
-            }).fail(function (jqxhr, textStatus, error) {
-                console.error('Error al cargar tramites-data.json:', textStatus, error);
-                const mensajeError = `
+                    }).fail(function (jqxhr, textStatus, error) {
+                        console.error('Error al cargar tramites-data.json:', textStatus, error);
+                        const mensajeError = `
                     <div style="text-align:center; padding:2rem; background:#fff; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
                         <p style="color:#d32f2f; font-size:1.2rem; margin-bottom:1rem;">⚠️ Error al cargar los datos</p>
                         <p style="color:#666;">Verifique que el archivo <code>tramites-data.json</code> esté en la misma carpeta que <code>index.html</code>.</p>
                         <p style="color:#666; margin-top:0.5rem;">Ruta actual usada: <code>${JSON_DATA_URL}</code></p>
                     </div>
                 `;
-                $tramitesGrid.html(mensajeError);
-            });
+                        $tramitesGrid.html(mensajeError);
+                    });
 
-            // ========================================
-            // Inicializar portal
-            // ========================================
-            function inicializarPortal() {
-                // Poblar select de organismos (sin duplicados, ordenado alfabéticamente)
-                // Soporta tanto organismo (string) como organismos (array)
-                const organismos = [...new Set(tramitesData.flatMap(t => 
-                    Array.isArray(t.organismos) ? t.organismos : (t.organismo ? [t.organismo] : [])
-                ))].sort();
-                organismos.forEach(org => {
-                    $organismoFilter.append(`<option value="${org}">${org}</option>`);
-                });
+                    // ========================================
+                    // Inicializar portal
+                    // ========================================
+                    function inicializarPortal() {
+                        // Poblar select de organismos (sin duplicados, ordenado alfabéticamente)
+                        // Soporta tanto organismo (string) como organismos (array)
+                        const organismos = [
+                            ...new Set(
+                                tramitesData.flatMap(t =>
+                                    Array.isArray(t.organismos)
+                                        ? t.organismos
+                                        : t.organismo
+                                        ? [t.organismo]
+                                        : []
+                                )
+                            ),
+                        ].sort();
+                        organismos.forEach(org => {
+                            $organismoFilter.append(`<option value="${org}">${org}</option>`);
+                        });
 
-                // Poblar select de circunscripciones (sin duplicados, ordenado alfabéticamente)
-                const circunscripciones = [...new Set(tramitesData.flatMap(t => 
-                    Array.isArray(t.circunscripciones) ? t.circunscripciones : (t.circunscripcion ? [t.circunscripcion] : [])
-                ))].sort();
-                circunscripciones.forEach(circ => {
-                    $circunscripcionFilter.append(`<option value="${circ}">${circ}</option>`);
-                });
+                        // Poblar select de circunscripciones (sin duplicados, ordenado alfabéticamente)
+                        const circunscripciones = [
+                            ...new Set(
+                                tramitesData.flatMap(t =>
+                                    Array.isArray(t.circunscripciones)
+                                        ? t.circunscripciones
+                                        : t.circunscripcion
+                                        ? [t.circunscripcion]
+                                        : []
+                                )
+                            ),
+                        ].sort();
+                        circunscripciones.forEach(circ => {
+                            $circunscripcionFilter.append(
+                                `<option value="${circ}">${circ}</option>`
+                            );
+                        });
 
-                // Renderizar todos los trámites inicialmente
-                renderizarTramites(tramitesData);
+                        // Renderizar todos los trámites inicialmente
+                        renderizarTramites(tramitesData);
 
-                // Búsqueda con debounce
-                let searchTimeout;
-                $searchInput.on('input', function () {
-                    clearTimeout(searchTimeout);
-                    searchTimeout = setTimeout(filtrarTramites, 300);
-                });
+                        // Búsqueda con debounce
+                        let searchTimeout;
+                        $searchInput.on('input', function () {
+                            clearTimeout(searchTimeout);
+                            searchTimeout = setTimeout(filtrarTramites, 300);
+                        });
 
-                // Filtro de organismo con captura de valor
-                $organismoFilter.on('change', function () {
-                    currentOrganismoSelected = $(this).val();
-                    actualizarTituloOrganismo();
-                    filtrarTramites();
-                    restaurarSelectOrganismo();
-                });
+                        // Filtro de organismo con captura de valor
+                        $organismoFilter.on('change', function () {
+                            currentOrganismoSelected = $(this).val();
+                            actualizarTituloOrganismo();
+                            filtrarTramites();
+                            restaurarSelectOrganismo();
+                        });
 
-                // Filtro de circunscripción con captura de valor
-                $circunscripcionFilter.on('change', function () {
-                    currentCircunscripcionSelected = $(this).val();
-                    filtrarTramites();
-                    restaurarSelectCircunscripcion();
-                });
-            }
-
-            // ========================================
-            // Función para restaurar el select
-            // ========================================
-            function restaurarSelectOrganismo() {
-                if (currentOrganismoSelected) {
-                    $organismoFilter.val(currentOrganismoSelected);
-
-                    setTimeout(function () {
-                        $organismoFilter.val(currentOrganismoSelected);
-                        $organismoFilter.find('option').prop('selected', false);
-                        $organismoFilter.find(`option[value="${currentOrganismoSelected}"]`).prop('selected', true);
-                    }, 10);
-
-                    setTimeout(function () {
-                        $organismoFilter.val(currentOrganismoSelected);
-                    }, 50);
-
-                    setTimeout(function () {
-                        $organismoFilter.val(currentOrganismoSelected);
-                    }, 100);
-                }
-            }
-
-            // ========================================
-            // Función para restaurar el select de circunscripción
-            // ========================================
-            function restaurarSelectCircunscripcion() {
-                if (currentCircunscripcionSelected) {
-                    $circunscripcionFilter.val(currentCircunscripcionSelected);
-
-                    setTimeout(function () {
-                        $circunscripcionFilter.val(currentCircunscripcionSelected);
-                        $circunscripcionFilter.find('option').prop('selected', false);
-                        $circunscripcionFilter.find(`option[value="${currentCircunscripcionSelected}"]`).prop('selected', true);
-                    }, 10);
-
-                    setTimeout(function () {
-                        $circunscripcionFilter.val(currentCircunscripcionSelected);
-                    }, 50);
-
-                    setTimeout(function () {
-                        $circunscripcionFilter.val(currentCircunscripcionSelected);
-                    }, 100);
-                }
-            }
-
-            // ========================================
-            // Renderizar trámites
-            // ========================================
-            function renderizarTramites(tramites) {
-                $tramitesGrid.empty();
-
-                if (tramites.length === 0) {
-                    $noResults.show();
-                    return;
-                }
-
-                $noResults.hide();
-
-                tramites.forEach(tramite => {
-                    let html = '';
-
-                    if (tramite.componenteTipo === 'acordeon') {
-                        html = generarAcordeon(tramite);
-                    } else {
-                        html = generarTarjeta(tramite);
+                        // Filtro de circunscripción con captura de valor
+                        $circunscripcionFilter.on('change', function () {
+                            currentCircunscripcionSelected = $(this).val();
+                            filtrarTramites();
+                            restaurarSelectCircunscripcion();
+                        });
                     }
 
-                    $tramitesGrid.append(html);
-                });
+                    // ========================================
+                    // Función para restaurar el select
+                    // ========================================
+                    function restaurarSelectOrganismo() {
+                        if (currentOrganismoSelected) {
+                            $organismoFilter.val(currentOrganismoSelected);
 
-                actualizarContador(tramites.length);
-                restaurarSelectOrganismo();
-            }
+                            setTimeout(function () {
+                                $organismoFilter.val(currentOrganismoSelected);
+                                $organismoFilter.find('option').prop('selected', false);
+                                $organismoFilter
+                                    .find(`option[value="${currentOrganismoSelected}"]`)
+                                    .prop('selected', true);
+                            }, 10);
 
-            // ========================================
-            // Generar tarjeta simple
-            // ========================================
-            function generarTarjeta(tramite) {
-                const iconos = {
-                    'guia': '📋',
-                    'pauta': '📜',
-                    'modelo': '📝'
-                };
+                            setTimeout(function () {
+                                $organismoFilter.val(currentOrganismoSelected);
+                            }, 50);
 
-                const badgeClass = `badge-${tramite.tipo}`;
-                const icono = iconos[tramite.tipo] || '📄';
+                            setTimeout(function () {
+                                $organismoFilter.val(currentOrganismoSelected);
+                            }, 100);
+                        }
+                    }
 
-                const botonPDF = tramite.pdfUrl ?
-                    `<a href="${tramite.pdfUrl}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">📄 Descargar PDF</a>` :
-                    '';
+                    // ========================================
+                    // Función para restaurar el select de circunscripción
+                    // ========================================
+                    function restaurarSelectCircunscripcion() {
+                        if (currentCircunscripcionSelected) {
+                            $circunscripcionFilter.val(currentCircunscripcionSelected);
 
-                return `
+                            setTimeout(function () {
+                                $circunscripcionFilter.val(currentCircunscripcionSelected);
+                                $circunscripcionFilter.find('option').prop('selected', false);
+                                $circunscripcionFilter
+                                    .find(`option[value="${currentCircunscripcionSelected}"]`)
+                                    .prop('selected', true);
+                            }, 10);
+
+                            setTimeout(function () {
+                                $circunscripcionFilter.val(currentCircunscripcionSelected);
+                            }, 50);
+
+                            setTimeout(function () {
+                                $circunscripcionFilter.val(currentCircunscripcionSelected);
+                            }, 100);
+                        }
+                    }
+
+                    // ========================================
+                    // Renderizar trámites
+                    // ========================================
+                    function renderizarTramites(tramites) {
+                        $tramitesGrid.empty();
+
+                        if (tramites.length === 0) {
+                            $noResults.show();
+                            return;
+                        }
+
+                        $noResults.hide();
+
+                        tramites.forEach(tramite => {
+                            let html = '';
+
+                            if (tramite.componenteTipo === 'acordeon') {
+                                html = generarAcordeon(tramite);
+                            } else {
+                                html = generarTarjeta(tramite);
+                            }
+
+                            $tramitesGrid.append(html);
+                        });
+
+                        actualizarContador(tramites.length);
+                        restaurarSelectOrganismo();
+                    }
+
+                    // ========================================
+                    // Generar tarjeta simple
+                    // ========================================
+                    function generarTarjeta(tramite) {
+                        const iconos = {
+                            guia: '📋',
+                            pauta: '📜',
+                            modelo: '📝',
+                        };
+
+                        const badgeClass = `badge-${tramite.tipo}`;
+                        const icono = iconos[tramite.tipo] || '📄';
+                        const descripcionHTML = renderizarDescripcion(tramite);
+                        const botonesHTML = generarBotones(tramite);
+
+                        return `
                     <div class="tramite-card tramite-item"
-                        data-organismos='${JSON.stringify(Array.isArray(tramite.organismos) ? tramite.organismos : (tramite.organismo ? [tramite.organismo] : []))}'
-                        data-circunscripciones='${JSON.stringify(Array.isArray(tramite.circunscripciones) ? tramite.circunscripciones : (tramite.circunscripcion ? [tramite.circunscripcion] : []))}'
+                        data-organismos='${JSON.stringify(
+                            Array.isArray(tramite.organismos)
+                                ? tramite.organismos
+                                : tramite.organismo
+                                ? [tramite.organismo]
+                                : []
+                        )}'
+                        data-circunscripciones='${JSON.stringify(
+                            Array.isArray(tramite.circunscripciones)
+                                ? tramite.circunscripciones
+                                : tramite.circunscripcion
+                                ? [tramite.circunscripcion]
+                                : []
+                        )}'
                         data-tipo="${tramite.tipo}"
                         data-titulo="${tramite.titulo.toLowerCase()}">
                         <div class="tramite-card-header">
                             <span class="tramite-icon">${icono}</span>
                             <div class="tramite-card-title">
                                 <h3>${tramite.titulo}</h3>
-                                <div class="organismo">${Array.isArray(tramite.organismos) ? tramite.organismos.join(', ') : tramite.organismo}</div>
+                                <div class="organismo">${
+                                    Array.isArray(tramite.organismos)
+                                        ? tramite.organismos.join(', ')
+                                        : tramite.organismo
+                                }</div>
                             </div>
                         </div>
 
                         <div>
                             <span class="badge ${badgeClass}">${tramite.tipoLabel}</span>
-                            <span class="badge badge-circunscripcion">${Array.isArray(tramite.circunscripciones) ? tramite.circunscripciones.join(', ') : tramite.circunscripcion}</span>
+                            <span class="badge badge-circunscripcion">${
+                                Array.isArray(tramite.circunscripciones)
+                                    ? tramite.circunscripciones.join(', ')
+                                    : tramite.circunscripcion
+                            }</span>
                         </div>
 
-                        <p class="tramite-description">${tramite.descripcionCorta}</p>
+                        ${descripcionHTML}
 
-                        ${botonPDF ? `<div class="tramite-footer">${botonPDF}</div>` : ''}
+                        ${botonesHTML}
                     </div>
                 `;
-            }
+                    }
 
-            // ========================================
-            // Generar acordeón
-            // ========================================
-            function generarAcordeon(tramite) {
-                const badgeClass = `badge-${tramite.tipo}`;
+                    // ========================================
+                    // Generar acordeón
+                    // ========================================
+                    function generarAcordeon(tramite) {
+                        const badgeClass = `badge-${tramite.tipo}`;
+                        const descripcionHTML = renderizarDescripcion(tramite);
+                        const botonesHTML = generarBotones(tramite);
 
-                let seccionesHTML = '';
-                if (tramite.secciones && tramite.secciones.length > 0) {
-                    seccionesHTML = tramite.secciones.map(seccion => `
+                        let seccionesHTML = '';
+                        if (tramite.secciones && tramite.secciones.length > 0) {
+                            seccionesHTML = tramite.secciones
+                                .map(
+                                    seccion => `
                         <div class="accordion-section">
                             <h4>${seccion.titulo}</h4>
                             <p>${seccion.contenido.replace(/\n/g, '<br>')}</p>
                         </div>
-                    `).join('');
-                }
+                    `
+                                )
+                                .join('');
+                        }
 
-                const botonPDF = tramite.pdfUrl ?
-                    `<div class="tramite-footer">
-                        <a href="${tramite.pdfUrl}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">📄 Descargar PDF</a>
-                    </div>` :
-                    '';
-
-                return `
+                        return `
                     <details class="tramite-accordion tramite-item"
-                        data-organismos='${JSON.stringify(Array.isArray(tramite.organismos) ? tramite.organismos : (tramite.organismo ? [tramite.organismo] : []))}'
-                        data-circunscripciones='${JSON.stringify(Array.isArray(tramite.circunscripciones) ? tramite.circunscripciones : (tramite.circunscripcion ? [tramite.circunscripcion] : []))}'
+                        data-organismos='${JSON.stringify(
+                            Array.isArray(tramite.organismos)
+                                ? tramite.organismos
+                                : tramite.organismo
+                                ? [tramite.organismo]
+                                : []
+                        )}'
+                        data-circunscripciones='${JSON.stringify(
+                            Array.isArray(tramite.circunscripciones)
+                                ? tramite.circunscripciones
+                                : tramite.circunscripcion
+                                ? [tramite.circunscripcion]
+                                : []
+                        )}'
                         data-tipo="${tramite.tipo}"
                         data-titulo="${tramite.titulo.toLowerCase()}">
                         <summary class="accordion-summary">
                             <div class="accordion-title-wrapper">
                                 <h3>${tramite.titulo}</h3>
-                                <div class="organismo">${Array.isArray(tramite.organismos) ? tramite.organismos.join(', ') : tramite.organismo}</div>
+                                <div class="organismo">${
+                                    Array.isArray(tramite.organismos)
+                                        ? tramite.organismos.join(', ')
+                                        : tramite.organismo
+                                }</div>
                                 <div style="margin-top: 0.5rem;">
                                     <span class="badge ${badgeClass}">${tramite.tipoLabel}</span>
-                                    <span class="badge badge-circunscripcion">${Array.isArray(tramite.circunscripciones) ? tramite.circunscripciones.join(', ') : tramite.circunscripcion}</span>
+                                    <span class="badge badge-circunscripcion">${
+                                        Array.isArray(tramite.circunscripciones)
+                                            ? tramite.circunscripciones.join(', ')
+                                            : tramite.circunscripcion
+                                    }</span>
                                 </div>
                             </div>
                             <span class="accordion-expand-icon">▼</span>
                         </summary>
 
                         <div class="accordion-content">
+                            ${descripcionHTML}
                             ${seccionesHTML}
-                            ${botonPDF}
+                            ${botonesHTML}
                         </div>
                     </details>
                 `;
-            }
-
-            // ========================================
-            // Filtrar trámites
-            // ========================================
-            function filtrarTramites() {
-                const searchTerm = $searchInput.val().toLowerCase().trim();
-                const selectedOrganismo = currentOrganismoSelected;
-                const selectedCircunscripcion = currentCircunscripcionSelected;
-
-                const filtrados = tramitesData.filter(tramite => {
-                    const matchesSearch = searchTerm === '' ||
-                        tramite.titulo.toLowerCase().includes(searchTerm) ||
-                        tramite.descripcionCorta.toLowerCase().includes(searchTerm);
-
-                    // Soporta tanto organismo (string) como organismos (array)
-                    let organismos = [];
-                    if (Array.isArray(tramite.organismos)) {
-                        organismos = tramite.organismos;
-                    } else if (tramite.organismo) {
-                        organismos = [tramite.organismo];
                     }
-                    
-                    const matchesOrganismo = selectedOrganismo === '' ||
-                        organismos.includes(selectedOrganismo);
 
-                    // Soporta tanto circunscripcion (string) como circunscripciones (array)
-                    let circunscripciones = [];
-                    if (Array.isArray(tramite.circunscripciones)) {
-                        circunscripciones = tramite.circunscripciones;
-                    } else if (tramite.circunscripcion) {
-                        circunscripciones = [tramite.circunscripcion];
+                    // ========================================
+                    // Descripciones y botones dinámicos
+                    // ========================================
+                    function renderizarDescripcion(tramite) {
+                        if (
+                            Array.isArray(tramite.descripciones) &&
+                            tramite.descripciones.length > 0
+                        ) {
+                            const items = tramite.descripciones
+                                .map(item => `<li>${item}</li>`)
+                                .join('');
+                            return `<ul class="tramite-description-list">${items}</ul>`;
+                        }
+
+                        if (tramite.descripcionCorta) {
+                            return `<p class="tramite-description">${tramite.descripcionCorta}</p>`;
+                        }
+
+                        return '';
                     }
-                    
-                    const matchesCircunscripcion = selectedCircunscripcion === '' ||
-                        circunscripciones.includes(selectedCircunscripcion);
 
-                    return matchesSearch && matchesOrganismo && matchesCircunscripcion;
+                    function generarBotones(tramite) {
+                        const botones = [];
+
+                        if (Array.isArray(tramite.botones) && tramite.botones.length > 0) {
+                            tramite.botones.forEach(btn => {
+                                if (!btn || !btn.url) return;
+                                const etiqueta = btn.texto || btn.label || 'Ver recurso';
+                                const icono = btn.icono || btn.icon || '🔗';
+                                botones.push(
+                                    `<a href="${btn.url}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">${icono} ${etiqueta}</a>`
+                                );
+                            });
+                        }
+
+                        if (botones.length === 0) {
+                            return '';
+                        }
+
+                        return `<div class="tramite-footer">${botones.join('')}</div>`;
+                    }
+
+                    // ========================================
+                    // Filtrar trámites
+                    // ========================================
+                    function filtrarTramites() {
+                        const searchTerm = $searchInput.val().toLowerCase().trim();
+                        const selectedOrganismo = currentOrganismoSelected;
+                        const selectedCircunscripcion = currentCircunscripcionSelected;
+
+                        const filtrados = tramitesData.filter(tramite => {
+                            const matchesSearch =
+                                searchTerm === '' ||
+                                tramite.titulo.toLowerCase().includes(searchTerm) ||
+                                tramite.descripcionCorta.toLowerCase().includes(searchTerm);
+
+                            // Soporta tanto organismo (string) como organismos (array)
+                            let organismos = [];
+                            if (Array.isArray(tramite.organismos)) {
+                                organismos = tramite.organismos;
+                            } else if (tramite.organismo) {
+                                organismos = [tramite.organismo];
+                            }
+
+                            const matchesOrganismo =
+                                selectedOrganismo === '' || organismos.includes(selectedOrganismo);
+
+                            // Soporta tanto circunscripcion (string) como circunscripciones (array)
+                            let circunscripciones = [];
+                            if (Array.isArray(tramite.circunscripciones)) {
+                                circunscripciones = tramite.circunscripciones;
+                            } else if (tramite.circunscripcion) {
+                                circunscripciones = [tramite.circunscripcion];
+                            }
+
+                            const matchesCircunscripcion =
+                                selectedCircunscripcion === '' ||
+                                circunscripciones.includes(selectedCircunscripcion);
+
+                            return matchesSearch && matchesOrganismo && matchesCircunscripcion;
+                        });
+
+                        if (filtrados.length === 0) {
+                            $noResults.fadeIn(300);
+                            $tramitesGrid.fadeOut(300);
+                        } else {
+                            $noResults.fadeOut(300);
+                            $tramitesGrid.fadeIn(300);
+                            renderizarTramites(filtrados);
+                        }
+
+                        actualizarContador(filtrados.length);
+                    }
+
+                    // ========================================
+                    // Actualizar contador de resultados
+                    // ========================================
+                    function actualizarContador(count) {
+                        $resultCount.text(count);
+                    }
+
+                    function actualizarTituloOrganismo() {
+                        const selectedOrganismo = currentOrganismoSelected;
+                        const selectedOrganismoLabel =
+                            selectedOrganismo === '' ? 'Todos los organismos' : selectedOrganismo;
+                        $selectedOrganismoSubtitle.text(selectedOrganismoLabel);
+                        $selectedOrganismoSubtitle.fadeIn(300);
+                    }
+
+                    // ========================================
+                    // Animación de acordeones
+                    // ========================================
+                    $(document).on('toggle', '.tramite-accordion', function () {
+                        const $this = $(this);
+                        if ($this.prop('open')) {
+                            $this.find('.accordion-content').hide().slideDown(400);
+                        }
+                    });
+
+                    console.log('Portal de Trámites cargado correctamente ✅');
                 });
-
-                if (filtrados.length === 0) {
-                    $noResults.fadeIn(300);
-                    $tramitesGrid.fadeOut(300);
-                } else {
-                    $noResults.fadeOut(300);
-                    $tramitesGrid.fadeIn(300);
-                    renderizarTramites(filtrados);
-                }
-
-                actualizarContador(filtrados.length);
-            }
-
-            // ========================================
-            // Actualizar contador de resultados
-            // ========================================
-            function actualizarContador(count) {
-                $resultCount.text(count);
-            }
-
-            function actualizarTituloOrganismo() {
-                const selectedOrganismo = currentOrganismoSelected;
-                const selectedOrganismoLabel = selectedOrganismo === '' ? 'Todos los organismos' : selectedOrganismo;
-                $selectedOrganismoSubtitle.text(selectedOrganismoLabel);
-                $selectedOrganismoSubtitle.fadeIn(300);
-            }
-
-            // ========================================
-            // Animación de acordeones
-            // ========================================
-            $(document).on('toggle', '.tramite-accordion', function () {
-                const $this = $(this);
-                if ($this.prop('open')) {
-                    $this.find('.accordion-content').hide().slideDown(400);
-                }
-            });
-
-            console.log('Portal de Trámites cargado correctamente ✅');
-        });
-
-    })(jQuery);
-</script>
-
-</body>
+            })(jQuery);
+        </script>
+    </body>
 </html>

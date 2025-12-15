@@ -3,24 +3,26 @@
         {
             "id": 2,
             "titulo": "Asignación de Causas de Cámara",
-            "organismos": ["Cámara de Apelaciones Civil - Comodoro Rivadavia"],
+            "organismos": [
+                "Cámara de Apelaciones Civil - Comodoro Rivadavia"
+            ],
             "circunscripcion": "Comodoro Rivadavia",
             "tipo": "pauta",
             "tipoLabel": "Pauta",
             "componenteTipo": "tarjeta",
-            "descripcionCorta": "Documento oficial que establece el procedimiento y criterios para la asignación de causas judiciales a los distintos miembros de la Cámara de Apelaciones Civil. Acuerdo N° 15/2021.",
-            "pdfUrl": "https://www.juschubut.gov.ar/images/ACUERDO-Nro-15_2021.pdf"
+            "descripcionCorta": "Documento oficial que establece el procedimiento y criterios para la asignación de causas judiciales a los distintos miembros de la Cámara de Apelaciones Civil. Acuerdo N° 15/2021."
         },
         {
             "id": 5,
             "titulo": "Pautas de tramitación en lo Contencioso Administrativo",
-            "organismos": ["Juzgado en lo Contencioso Administrativo - Esquel"],
+            "organismos": [
+                "Juzgado en lo Contencioso Administrativo - Esquel"
+            ],
             "circunscripcion": "Esquel",
             "tipo": "pauta",
             "tipoLabel": "Pauta",
             "componenteTipo": "acordeon",
             "descripcionCorta": "Lineamientos procedimentales para causas en el fuero Contencioso Administrativo",
-            "pdfUrl": "",
             "secciones": [
                 {
                     "titulo": "Consideraciones generales",
@@ -39,46 +41,50 @@
         {
             "id": 6,
             "titulo": "Guía para oficios a confronte",
-            "organismos": ["Juzgado Laboral N° 1 - Puerto Madryn"],
+            "organismos": [
+                "Juzgado Laboral N° 1 - Puerto Madryn"
+            ],
             "circunscripcion": "Puerto Madryn",
             "tipo": "modelo",
             "tipoLabel": "Modelo",
             "componenteTipo": "tarjeta",
-            "descripcionCorta": "Los oficios se deben subir por Serconex como cualquier otro escrito judicial, directamente sin requerir otro escrito. En caso que corresponda su libramiento, se firmará en soporte papel y se dejará en mesa de entradas.",
-            "pdfUrl": ""
+            "descripcionCorta": "Los oficios se deben subir por Serconex como cualquier otro escrito judicial, directamente sin requerir otro escrito. En caso que corresponda su libramiento, se firmará en soporte papel y se dejará en mesa de entradas."
         },
         {
             "id": 7,
             "titulo": "Cesión de honorarios - Pautas",
-            "organismos": ["Juzgado Laboral N° 1 - Puerto Madryn"],
+            "organismos": [
+                "Juzgado Laboral N° 1 - Puerto Madryn"
+            ],
             "circunscripcion": "Puerto Madryn",
             "tipo": "pauta",
             "tipoLabel": "Pauta",
             "componenteTipo": "tarjeta",
-            "descripcionCorta": "Para que proceda la cesión de honorarios se requiere conformidad expresa del cesionario mediante escrito por Serconex con firma ológrafa. En caso de requerirse ratificación ante Actuario se indicará por providencia.",
-            "pdfUrl": ""
+            "descripcionCorta": "Para que proceda la cesión de honorarios se requiere conformidad expresa del cesionario mediante escrito por Serconex con firma ológrafa. En caso de requerirse ratificación ante Actuario se indicará por providencia."
         },
         {
             "id": 8,
             "titulo": "Presentación de Certificados de Trabajo",
-            "organismos": ["Juzgado Laboral N° 2 - Puerto Madryn"],
+            "organismos": [
+                "Juzgado Laboral N° 2 - Puerto Madryn"
+            ],
             "circunscripcion": "Puerto Madryn",
             "tipo": "modelo",
             "tipoLabel": "Modelo",
             "componenteTipo": "tarjeta",
-            "descripcionCorta": "Los certificados de trabajo deberán presentarse en original en soporte papel por mesa de entradas, debiendo paralelamente o previamente subir a Serconex el escrito que indica su presentación.",
-            "pdfUrl": ""
+            "descripcionCorta": "Los certificados de trabajo deberán presentarse en original en soporte papel por mesa de entradas, debiendo paralelamente o previamente subir a Serconex el escrito que indica su presentación."
         },
         {
             "id": 9,
             "titulo": "Reclamo psicológico en Accidentes de Trabajo",
-            "organismos": ["Juzgado Laboral N° 3 - Puerto Madryn"],
+            "organismos": [
+                "Juzgado Laboral N° 3 - Puerto Madryn"
+            ],
             "circunscripcion": "Puerto Madryn",
             "tipo": "pauta",
             "tipoLabel": "Pauta",
             "componenteTipo": "acordeon",
             "descripcionCorta": "Requisitos para reclamos de incapacidad psicológica derivada de accidentes laborales",
-            "pdfUrl": "",
             "secciones": [
                 {
                     "titulo": "Requisito previo",
@@ -93,58 +99,62 @@
         {
             "id": 10,
             "titulo": "Presentación de documentación física",
-            "organismos": ["Juzgado de Ejecución N° 1 - Comodoro Rivadavia"],
+            "organismos": [
+                "Juzgado de Ejecución N° 1 - Comodoro Rivadavia"
+            ],
             "circunscripcion": "Comodoro Rivadavia",
             "tipo": "pauta",
             "tipoLabel": "Pauta",
             "componenteTipo": "tarjeta",
-            "descripcionCorta": "La documentación física se presenta por mesa de entradas debiendo paralelamente o previamente subir a Serconex el escrito que indica su presentación. Horario de atención: lunes a viernes de 7:00 a 13:00 hs.",
-            "pdfUrl": ""
+            "descripcionCorta": "La documentación física se presenta por mesa de entradas debiendo paralelamente o previamente subir a Serconex el escrito que indica su presentación. Horario de atención: lunes a viernes de 7:00 a 13:00 hs."
         },
         {
             "id": 11,
             "titulo": "Cédulas de notificación",
-            "organismos": ["Juzgado de Ejecución N° 3 - Comodoro Rivadavia"],
+            "organismos": [
+                "Juzgado de Ejecución N° 3 - Comodoro Rivadavia"
+            ],
             "circunscripcion": "Comodoro Rivadavia",
             "tipo": "modelo",
             "tipoLabel": "Modelo",
             "componenteTipo": "tarjeta",
-            "descripcionCorta": "Las cédulas de notificación se presentan directamente por mesa de entradas para su control. Deben cumplir con los requisitos formales establecidos por el Código Procesal.",
-            "pdfUrl": ""
+            "descripcionCorta": "Las cédulas de notificación se presentan directamente por mesa de entradas para su control. Deben cumplir con los requisitos formales establecidos por el Código Procesal."
         },
         {
             "id": 12,
             "titulo": "Pautas para audiencias judiciales",
-            "organismos": ["Juzgado de Familia - Esquel"],
+            "organismos": [
+                "Juzgado de Familia - Esquel"
+            ],
             "circunscripcion": "Esquel",
             "tipo": "pauta",
             "tipoLabel": "Pauta",
             "componenteTipo": "tarjeta",
-            "descripcionCorta": "Lineamientos para la participación en audiencias judiciales, tanto presenciales como remotas. Incluye requisitos de conexión, conducta procesal y documentación necesaria.",
-            "pdfUrl": ""
+            "descripcionCorta": "Lineamientos para la participación en audiencias judiciales, tanto presenciales como remotas. Incluye requisitos de conexión, conducta procesal y documentación necesaria."
         },
-
         {
             "id": 15,
             "titulo": "Pautas de tramitación civil y comercial",
-            "organismos": ["Juzgado Civil y Comercial N° 1 - Trelew"],
+            "organismos": [
+                "Juzgado Civil y Comercial N° 1 - Trelew"
+            ],
             "circunscripcion": "Trelew",
             "tipo": "pauta",
             "tipoLabel": "Pauta",
             "componenteTipo": "tarjeta",
-            "descripcionCorta": "Lineamientos procedimentales para la tramitación de causas civiles y comerciales. Incluye plazos, formas de notificación, presentación de pruebas y demás aspectos procesales.",
-            "pdfUrl": ""
+            "descripcionCorta": "Lineamientos procedimentales para la tramitación de causas civiles y comerciales. Incluye plazos, formas de notificación, presentación de pruebas y demás aspectos procesales."
         },
         {
             "id": 18,
             "titulo": "Declaraciones Juradas",
-            "organismos": ["Juzgado de Paz - Sarmiento"],
+            "organismos": [
+                "Juzgado de Paz - Sarmiento"
+            ],
             "circunscripcion": "Sarmiento",
             "tipo": "modelo",
             "tipoLabel": "Modelo",
             "componenteTipo": "acordeon",
             "descripcionCorta": "Trámite de declaración jurada ante el Juzgado de Paz. Requiere presencia de dos testigos. Servicio gratuito.",
-            "pdfUrl": "",
             "secciones": [
                 {
                     "titulo": "¿Cómo hago?",
@@ -167,13 +177,14 @@
         {
             "id": 19,
             "titulo": "Carta Poder",
-            "organismos": ["Juzgado de Paz - Sarmiento"],
+            "organismos": [
+                "Juzgado de Paz - Sarmiento"
+            ],
             "circunscripcion": "Sarmiento",
             "tipo": "modelo",
             "tipoLabel": "Modelo",
             "componenteTipo": "acordeon",
             "descripcionCorta": "Confección de carta poder ante el Juzgado de Paz. Se entrega el mismo día. Servicio gratuito.",
-            "pdfUrl": "",
             "secciones": [
                 {
                     "titulo": "¿Qué necesito?",
@@ -200,13 +211,14 @@
         {
             "id": 20,
             "titulo": "Certificado de Supervivencia",
-            "organismos": ["Juzgado de Paz - Sarmiento"],
+            "organismos": [
+                "Juzgado de Paz - Sarmiento"
+            ],
             "circunscripcion": "Sarmiento",
             "tipo": "modelo",
             "tipoLabel": "Modelo",
             "componenteTipo": "tarjeta",
-            "descripcionCorta": "Certificación de supervivencia para trámites previsionales o bancarios. Se entrega el mismo día. Servicio gratuito.",
-            "pdfUrl": ""
+            "descripcionCorta": "Certificación de supervivencia para trámites previsionales o bancarios. Se entrega el mismo día. Servicio gratuito."
         }
     ]
 }

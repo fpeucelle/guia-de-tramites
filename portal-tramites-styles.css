@@ -230,6 +230,18 @@
     flex: 1;
 }
 
+.portal-tramites .tramite-description-list {
+    margin: 0 0 1.2rem 1.2rem;
+    color: var(--gris-texto);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    list-style: disc;
+}
+
+.portal-tramites .tramite-description-list li {
+    margin-bottom: 0.35rem;
+}
+
 .portal-tramites .tramite-footer {
     display: flex;
     gap: 0.8rem;
